@@ -1,1 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Conceptual Model</title>
+</head>
+<body>
+·   <section class="Conceptual Model">
+	<div class="Attribute">
 
+		<b>profile:</b>
+	<li>profileId </li> <b>(Primary Key)</b>
+<li>profileActivationToken</li>
+<li>profileEmail</li>
+<li>profileHash</li>
+<li>profileDisplayName</li>
+<li>profilePhoneNumber</li>
+<Br>
+·       <B>activities:</B>
+<li>activityId</li>
+<li>activityName</li>
+		<Br>
+·   <b>activitiesParks</b> (Discludes ParkName from API)
+<li>activityParkId</li>
+<li>activityParkName</li>
+<li>activityParkPark</li>
+<li>activityParkParkState</li>
+<li>activityParkParkName</li>
+<li>activityParkParkCode</li>
+<li>activityParkParkDesignation</li>
+		<Br>
+·   <B>alerts:</B>(Disclude url from API)
+<li>alertsCategory</li>
+<li>alertsDescription</li>
+<li>alertsId</li>
+<li>alertsParkCode <b>(Foreign  Key)</b></li>
+<li>alertsTitle</li>
+		<Br>
+·    <B>campgrounds:</B>
+<li>campgroundsAccessibilityWheelchair</li>
+<li>campgroundsAccessibilityInternet</li>
+<li>campgroundsAccessibilityRvallow</li>
+<li>campgroundAccessibilityFirestoveallow</li>
+<li>campgroundsAccessibilityRvallowLength</li>
+<li>campgroundsAccessibilityTrailerallow</li>
+<li>campgroundsClassification</li>
+<li>campgroundsAmmenitiesTrash</li>
+<li>campgroundsAmmenitiesToilets</li>
+<li>campgroundsAmmenitiesShowers</li>
+<li>campgroundsAmmenitiesCellreception</li>
+<li>campgroundsAmmenitiesLaundry</li>
+<li>campgroundsAmmenitiesAmpitheater</li>
+<li>campgroundsAmmenitiesDumpstation</li>
+<li>campgroundsAmmenitiesCampstore</li>
+<li>campgroundsAmmenitiesPotablewater</li>
+<li>campgroundsAmmenitiesIcesale</li>
+<li>campgroundsAmmenitiesFirewoodSale</li>
+<li>campgroundsAmmenitiesFoodStorageLockers</li>
+<li>campgroundsCampsitesTotalSites</li>
+<li>campgroundsCampsitesTentOnly</li>
+<li>campgroundsCampsitesOther</li>
+<li>campgroundsCampsitesGroup</li>
+<li>campgroundsCampsitesHorse</li>
+<li>campgroundsCampsitesElecticalHookups</li>
+<li>campgroundsCampsitesRvOnly</li>
+<li>campgroundsCampsitesWalkBoatTo</li>
+		<Br>
+		·  <b>parks:</b>
+<li>parkActivities <b>(Foreign  Key)</b></li>
+<li>parkAddresses</li>
+<li>parkStates</li>
+<li>parkContact</li>
+<li>parkDescription</li>
+<li>parkContact</li>
+<li>parkDesignation</li>
+<li>parkEnteranceFee</li>
+<li>parkEnterancePasses</li>
+<li>parkName</li>
+<li>parkId <b>(Primary Key)</b></li>
+<li>parkImages</li>
+<li>parkStandardHours</li>
+<li>parkCode</li>
+		<Br>
+·   <B>visitorCenters</B>
+<li>visitorCentersContact</li>
+<li>visitorCentersHours</li>
+<li>visitorCentersId</li>
+<li>visitorCentersName</li>
+<li>visitorCentersParkCode</li>
+		<Br>
+		<b>favoritePark</b>
+<li>favoriteProfileId</li>
+<li>favoriteParkId</li>
+<li>favoriteDate</li>
+		<Br>
+		·<b>visitedPark</b>
+<li>visitedParkProfileId</li>
+<li>visitedParkId</li>
+<li>visitedParkDate</li>
+<li>visitedParkQuantity</li>
+		<Br>
+		·<b>wishlistParks</b>
+<li>wishlistProfileId </li>
+<li>wishlistParkId</li>
+		<Br>
+		<a href="executive-summary.html">Mission Statement/Goals</a>
+		<br>
+		<a href="persona-tony.html">Tony's Story</a>
+		<Br>
+		<a href="interaction-flow-tony.html">Tony's Interaction Flow</a>
+		<Br>
+		<a href="sue.html">Sue's Story</a>
+		<Br>
+		<a href="interaction-flow-sue.html">Sue's Interaction flow</a>
+		<Br>
+
+	</div>
+</section>
+</body>
+</html>
