@@ -10,19 +10,20 @@
 <body>
 ·   <section class="Conceptual Model">
 	<div class="Attribute">
-	     <b>Profile:</b>
+
+		<b>profile:</b>
 	<li>profileId </li> <b>(Primary Key)</b>
 <li>profileActivationToken</li>
 <li>profileEmail</li>
 <li>profileHash</li>
 <li>profileDisplayName</li>
 <li>profilePhoneNumber</li>
-
-·       <B>Activities:</B>
+<Br>
+·       <B>activities:</B>
 <li>activityId</li>
 <li>activityName</li>
-
-·        activitiesParks (Discludes ParkName from API)
+		<Br>
+·   <b>activitiesParks</b> (Discludes ParkName from API)
 <li>activityParkId</li>
 <li>activityParkName</li>
 <li>activityParkPark</li>
@@ -30,15 +31,15 @@
 <li>activityParkParkName</li>
 <li>activityParkParkCode</li>
 <li>activityParkParkDesignation</li>
-
-·       <B>Alerts:</B>(Disclude url from API)
+		<Br>
+·   <B>alerts:</B>(Disclude url from API)
 <li>alertsCategory</li>
 <li>alertsDescription</li>
 <li>alertsId</li>
 <li>alertsParkCode <b>(Foreign  Key)</b></li>
 <li>alertsTitle</li>
-
-·        <B>Campgrounds:</B>
+		<Br>
+·    <B>campgrounds:</B>
 <li>campgroundsAccessibilityWheelchair</li>
 <li>campgroundsAccessibilityInternet</li>
 <li>campgroundsAccessibilityRvallow</li>
@@ -66,8 +67,8 @@
 <li>campgroundsCampsitesElecticalHookups</li>
 <li>campgroundsCampsitesRvOnly</li>
 <li>campgroundsCampsitesWalkBoatTo</li>
-
-·        parks
+		<Br>
+		·  <b>parks:</b>
 <li>parkActivities <b>(Foreign  Key)</b></li>
 <li>parkAddresses</li>
 <li>parkStates</li>
@@ -82,30 +83,41 @@
 <li>parkImages</li>
 <li>parkStandardHours</li>
 <li>parkCode</li>
-
-·        visitorcenters
+		<Br>
+·   <B>visitorCenters</B>
 <li>visitorCentersContact</li>
 <li>visitorCentersHours</li>
 <li>visitorCentersId</li>
 <li>visitorCentersName</li>
 <li>visitorCentersParkCode</li>
-
-·        Favorite Park
+		<Br>
+		<b>favoritePark</b>
 <li>favoriteProfileId</li>
 <li>favoriteParkId</li>
 <li>favoriteDate</li>
-
-·        Visited Park
+		<Br>
+		·<b>visitedPark</b>
 <li>visitedParkProfileId</li>
 <li>visitedParkId</li>
 <li>visitedParkDate</li>
 <li>visitedParkQuantity</li>
-
-·        Wishlist Parks
+		<Br>
+		·<b>wishlistParks</b>
 <li>wishlistProfileId </li>
 <li>wishlistParkId</li>
+		<Br>
+		<a href="executive-summary.html">Mission Statement/Goals</a>
+		<br>
+		<a href="persona-tony.html">Tony's Story</a>
+		<Br>
+		<a href="interaction-flow-tony.html">Tony's Interaction Flow</a>
+		<Br>
+		<a href="sue.html">Sue's Story</a>
+		<Br>
+		<a href="interaction-flow-sue.html">Sue's Interaction flow</a>
+		<Br>
 
-</div>
+	</div>
 </section>
 </body>
 </html>
