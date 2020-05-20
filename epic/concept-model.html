@@ -10,88 +10,63 @@
 <body>
  <section class="Conceptual Model">
 	<div class="Attribute">
-<strong>Conceptual Model</strong>
+<h1>Conceptual Model</h1>
 		<br>
-		<b>profile:</b>
-		<li>profileId <b>(Primary Key)</b></li>
-		<li>profileActivationToken</li>
-		<li>profileEmail</li>
-		<li>profileHash</li>
-		<li>profileDisplayName</li>
-		<li>profilePhoneNumber</li>
 
-		<Br>
-·       <B>activities:</B>
-		<li>activityId <b>(Primary Key)</b></li>
-		<li>activityName</li>
+		<b>profile</b>
+		<ul>
+			<li>profileId <b>(Primary Key)</b></li>
+			<li>profileActivationToken</li>
+			<li>profileEmail</li>
+			<li>profileHash</li>
+			<li>profileDisplayName</li>
+			<li>profilePhoneNumber</li>
+<Br>
+		<b>campgrounds</b>
+		<ul>
+			<li>campgroundsId <b>(Primary Key)</b></li>
+			<li>campgroundsParkId <b>(Foreign Key)</b></li> <!-- Park Id -->
+			<li>campgroundsAccessibility</li> <!-- RV Allowed -->
+			<li>campgroundsAddresses</li>
+			<li>campgroundsCampsites</li>
+			<li>campgroundsClassification</li>
+			<li>campgroundsRegulationsOverview</li>
+			<li>campgroundsWeatherOverview</li>
+		</ul>
 
-		<b>activitiesParks</b>
-		<li>activityParkId <b>(Foreign  Key)</b></li> <!-- Activity ID -->
-		<li>activityParkName <b>(Foreign  Key)</b></li> <!-- Activity Name -->
-		<li>activityParkId <b>(Foreign  Key)</b></li> <!-- Park Id -->
+			<b>Ammenities</b>
+			<ul>
+		<li>ammenitiessId <b>(Primary Key)</b></li>
+		</ul>
 
-		<Br>
-·   <B>alerts:</B>(Disclude url from API)
-		<li>alertsId <b>(Primary  Key)</b></li>
-		<li>alertsParkId <b>(Foreign  Key)</b></li> <!-- Park Id -->
-		<li>alertsCategory</li>
-		<li>alertsDescription</li>
-		<li>alertsTitle</li>
+			<b>campgroundsAmmenities</b>
+		<ul>
+			<li>campgroundsId <b>(Foreign Key)</b></li>
+		</ul>
 
-		<Br>
-·    <B>campgrounds:</B>
-		<li>campgroundsId <b>(Primary Key)</b></li>
-		<li>campgroundsParkId <b>(Foreign Key)</b></li> <!-- Park Id -->
-		<li>campgroundsAccessibility</li>
-		<li>campgroundsAddresses</li>
-		<li>campgroundsAmenities</li>
-		<li>campgroundsCampsites</li>
-		<li>campgroundsRegulationsOverview</li>
-		<li>campgroundsWeatherOverview</li>
+		  <b>Park</b>
+		<ul>
+			<li>parkId <b>(Primary Key)</b></li>
+			<li>parkActivities <b>(Foreign  Key)</b></li>
+			<li>parkCampgroundId <b>(Foreign Key)</b></li> <!-- Campground Id -->
+			<li>parkAddresses</li>
+			<li>parkContact</li>
+			<li>parkDescription</li>
+			<li>parkDesignation</li>
+			<li>parkEnteranceFee</li>
+			<li>parkFullName</li>
+			<li>parkImages</li>
+			<li>parkStates</li>
+			<li>parkOperatingHours</li>
+		</ul>
 
-		<Br>
-		·  <b>parks:</b>
-		<li>parkId <b>(Primary Key)</b></li>
-		<li>parkActivities <b>(Foreign  Key)</b></li>
-		<li>parkCampgroundId <b>(Foreign Key)</b></li> <!-- Campground Id -->
-		<li>parkAddresses</li>
-		<li>parkContact</li>
-		<li>parkDescription</li>
-		<li>parkDesignation</li>
-		<li>parkEnteranceFee</li>
-		<li>parkEnterancePasses</li>
-		<li>parkFullName</li>
-		<li>parkImages</li>
-		<li>parkStates</li>
-		<li>parkWeatherInfo</li>
-		<li>parkOperatingHours</li>
-
-		<Br>
-·   <B>visitorCenters</B>
-		<li>visitorCentersId <b>(Primary Key)</b></li>
-		<li>visitorCentersParkId <b>(Foreign Key)</b></li> <!-- Park Id -->
-		<li>visitorCentersAddresses</li>
-		<li>visitorCentersContact</li>
-		<li>visitorCentersName</li>
-		<li>visitorCentersOperatingHours</li>
-
-		<Br>
-		<b>favoritePark</b>
-		<li>favoriteProfileId <b>(Foreign Key)</b></li> <!-- Profile Id -->
-		<li>favoriteParkId <b>(Foreign Key)</b></li> <!-- Park Id -->
-		<li>favoriteDate</li>
-
-		<Br>
-		·<b>visitedPark</b>
-		<li>visitedParkProfileId <b>(Foreign Key)</b></li> <!-- Profile Id -->
-		<li>visitedParkId <b>(Foreign Key)</b></li> <!-- Park Id -->
-		<li>visitedParkDate</li>
-		<li>visitedParkQuantity</li>
-
-		<Br>
-		·<b>wishlistParks</b>
-		<li>wishlistProfileId <b>(Foreign Key)</b></li> <!-- Profile Id -->
-		<li>wishlistParkId <b>(Foreign Key)</b></li> <!-- Park Id -->
+			<b>Park Status</b>
+		<ul>
+			<li>parkStatusProfileId <b>(Foreign Key)</b></li> <!-- Profile Id -->
+		<li>parkStatusId <b>(Foreign Key)</b></li> <!-- Park Id -->
+		<li>parkStatusDate</li>
+		<li>parkStatusStatus</li> <!-- Favorite, want to visit, visited-->
+		</ul>
 
 		<Br>
 		<a href="executive-summary.html">Mission Statement/Goals</a>
