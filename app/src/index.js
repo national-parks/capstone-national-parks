@@ -6,14 +6,14 @@ import {Route, Switch} from "react-router";
 
 import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
-import {Header} from "./sharedComponents/Header"
+import {ParkSearch} from './pages/ParkSearch';
 
 const Routing = () => (
 	<>
 		<BrowserRouter>
-			<Header />
 			<Switch>
 				<Route exact path="/" component={Home}/>
+				<Route exact path="/park-search" component={ParkSearch}/>
 				<Route component={FourOhFour}/>
 			</Switch>
 		</BrowserRouter>
