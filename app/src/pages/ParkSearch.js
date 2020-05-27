@@ -1,6 +1,5 @@
 import React from "react"
-import 'bootstrap/dist/css/bootstrap.css';
-
+import 'bootstrap/dist/css/bootstrap.css'
 
 export const ParkSearch = () => {
 	return (
@@ -16,7 +15,9 @@ export const ParkSearch = () => {
 
 						<div className="row">
 							<div className="offset-1 col-6">
-								SEARCH BAR
+								<form>
+									<input type='text' id='search' name='search' value='Search For Parks...' />
+								</form>
 							</div>
 							<div className="col-3">
 								BY STATE FILTER
@@ -39,26 +40,7 @@ export const ParkSearch = () => {
 							</div>
 						</div>
 
-						{/*  */}
-						<nav aria-label="pageNav">
-							<ul className="pagination">
-								<li className="page-item">
-									<a className="page-link" href="#" aria-label="Previous">
-										<span aria-hidden="true">&laquo;</span>
-										<span className="sr-only">Previous</span>
-									</a>
-								</li>
-								<li className="page-item"><a className="page-link" href="#">1</a></li>
-								<li className="page-item"><a className="page-link" href="#">2</a></li>
-								<li className="page-item"><a className="page-link" href="#">3</a></li>
-								<li className="page-item">
-									<a className="page-link" href="#" aria-label="Next">
-										<span aria-hidden="true">&raquo;</span>
-										<span className="sr-only">Next</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
+						{/* Pagination for navigating */}
 
 					</div>
 
