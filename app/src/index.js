@@ -6,12 +6,10 @@ import {Route, Switch} from "react-router";
 
 import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
-import {Header} from "./sharedComponents/Header"
 
 const Routing = () => (
 	<>
 		<BrowserRouter>
-			<Header />
 			<Switch>
 				<Route exact path="/" component={Home}/>
 				<Route component={FourOhFour}/>
