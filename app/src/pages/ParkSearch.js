@@ -1,4 +1,5 @@
 import React from "react"
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.css'
 import './ParkSearch.css'
 
@@ -215,7 +216,7 @@ export const ParkSearch = () => {
 						<h2>Park Name</h2>
 					</div>
 				</div>
-				<div className="row">
+				<div className="row"> <FontAwesomeIcon icon="envelope" />
 					I hate the Wetlands. They're stupid and wet, and there are bugs everywhere, and I think I maced a crane.
 					Pound is tic-tac-toe, right? Get rid of the Seaward. Lucille: I'll leave when I'm good and ready. Wine
 					only turns to alcohol if you let it sit. No, Pop-pop does not get a treat, I just brought you a [bleep]ing pizza.
