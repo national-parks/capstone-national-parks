@@ -24,12 +24,12 @@ div input[type=checkbox] {
 }
 
 /* Changes appearance of unchecked boxes */
-.check_box label,span,i {
+.check_box label,span {
 	color: dimgrey;
 	font-size: large;
 }
 
-i {
+.FontAwesomeIcon {
 	font-size: xx-large;
 }
 

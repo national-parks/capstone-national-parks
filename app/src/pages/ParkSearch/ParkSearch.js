@@ -17,14 +17,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label for="trashrecyclingcollection" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="trashrecyclingcollection" />
-								<span className="checkLabel">&nbsp;<i className="fas fa-dumpster"></i>&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="dumpster" />&nbsp;</span>
 							</label>
 							<br /> Trash Collection
 						</div>
 						<div className="col">
 							<label for="toilets" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="toilets" />
-								<span className="checkLabel">&nbsp;<i className="fas fa-toilet-paper"></i>&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="toilet-paper" />&nbsp;</span>
 							</label>
 							<br /> Toilets on Site
 						</div>
@@ -34,14 +34,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label for="internetconnectivity" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="internetconnectivity" />
-								<span className="checkLabel"><i className="fas fa-wifi"></i></span>
+								<span className="checkLabel"><FontAwesomeIcon icon="wifi" /></span>
 							</label>
 							<br /> Internet Available
 						</div>
 						<div className="col">
 							<label for="showers" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="showers" />
-								<span className="checkLabel">&nbsp;<i className="fas fa-shower"></i>&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="shower" />&nbsp;</span>
 							</label>
 							<br /> Showers on Site
 						</div>
@@ -51,14 +51,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label for="cellphonereception" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="cellphonereception" />
-								<span className="checkLabel">&nbsp;&nbsp;<i className="fas fa-mobile-alt"></i>&nbsp;&nbsp;</span>
+								<span className="checkLabel">&nbsp;&nbsp;<FontAwesomeIcon icon="mobile-alt" />&nbsp;&nbsp;</span>
 							</label>
 							<br /> Cellphone Reception
 						</div>
 						<div className="col">
 							<label for="laundry" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="laundry" />
-								<span className="checkLabel">&nbsp;<i className="fas fa-tshirt"></i>&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="tshirt" />&nbsp;</span>
 							</label>
 							<br /> Laundry on Site
 						</div>
@@ -68,14 +68,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label for="dumpstation" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="dumpstation" />
-								<span className="checkLabel">&nbsp;<i className="fas fa-poop"></i>&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="poop" />&nbsp;</span>
 							</label>
 							<br /> RV Dump Station
 						</div>
 						<div className="col">
 							<label for="campstore" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="campstore" />
-								<span className="checkLabel">&nbsp;<i className="fas fa-cash-register"></i>&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="cash-register" />&nbsp;</span>
 							</label>
 							<br /> Campstore Available
 						</div>
@@ -85,14 +85,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label for="stafforvolunteerhostonsite" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="stafforvolunteerhostonsite" />
-								<span className="checkLabel"><i className="fas fa-caravan"></i></span>
+								<span className="checkLabel"><FontAwesomeIcon icon="caravan" /></span>
 							</label>
 							<br /> Host on Site
 						</div>
 						<div className="col">
 							<label for="potablewater" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="potablewater" />
-								<span className="checkLabel">&nbsp;&nbsp;<i className="fas fa-tint"></i>&nbsp;&nbsp;</span>
+								<span className="checkLabel">&nbsp;&nbsp;<FontAwesomeIcon icon="tint" />&nbsp;&nbsp;</span>
 							</label>
 							<br /> Potable Water Available
 						</div>
@@ -102,14 +102,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label for="iceavailableforsale" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="iceavailableforsale" />
-								<span className="checkLabel"><i className="fas fa-igloo"></i></span>
+								<span className="checkLabel"><FontAwesomeIcon icon="igloo" /></span>
 							</label>
 							<br /> Ice for Sale
 						</div>
 						<div className="col">
 							<label for="firewoodforsale" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="firewoodforsale" />
-								<span className="checkLabel">&nbsp;<i className="fas fa-fire-alt"></i>&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="fire-alt" />&nbsp;</span>
 							</label>
 							<br /> Firewood for Sale
 						</div>
@@ -119,14 +119,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label for="amphitheater" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="amphitheater" />
-								<span className="checkLabel"><i className="fas fa-theater-masks"></i></span>
+								<span className="checkLabel"><FontAwesomeIcon icon="theater-masks" /></span>
 							</label>
 							<br /> Amphitheaters
 						</div>
 						<div className="col">
 							<label for="foodstoragelockers" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="foodstoragelockers" />
-								<span className="checkLabel">&nbsp;<i className="fas fa-box"></i>&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="box" />&nbsp;</span>
 							</label>
 							<br /> Food Storage Lockers
 						</div>
@@ -216,7 +216,7 @@ export const ParkSearch = () => {
 						<h2>Park Name</h2>
 					</div>
 				</div>
-				<div className="row"> <FontAwesomeIcon icon="envelope" />
+				<div className="row">
 					I hate the Wetlands. They're stupid and wet, and there are bugs everywhere, and I think I maced a crane.
 					Pound is tic-tac-toe, right? Get rid of the Seaward. Lucille: I'll leave when I'm good and ready. Wine
 					only turns to alcohol if you let it sit. No, Pop-pop does not get a treat, I just brought you a [bleep]ing pizza.
