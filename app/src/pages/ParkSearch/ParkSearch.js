@@ -17,14 +17,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label htmlFor="trashrecyclingcollection" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="trashrecyclingcollection" />
-								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="dumpster" />&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon className="fa-2x" icon="dumpster" />&nbsp;</span>
 							</label>
 							<br /> Trash Collection
 						</div>
 						<div className="col">
 							<label htmlFor="toilets" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="toilets" />
-								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="toilet-paper" />&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon className="fa-2x" icon="toilet-paper" />&nbsp;</span>
 							</label>
 							<br /> Toilets on Site
 						</div>
@@ -34,14 +34,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label htmlFor="internetconnectivity" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="internetconnectivity" />
-								<span className="checkLabel"><FontAwesomeIcon icon="wifi" /></span>
+								<span className="checkLabel"><FontAwesomeIcon className="fa-2x" icon="wifi" /></span>
 							</label>
 							<br /> Internet Available
 						</div>
 						<div className="col">
 							<label htmlFor="showers" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="showers" />
-								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="shower" />&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon className="fa-2x" icon="shower" />&nbsp;</span>
 							</label>
 							<br /> Showers on Site
 						</div>
@@ -51,14 +51,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label htmlFor="cellphonereception" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="cellphonereception" />
-								<span className="checkLabel">&nbsp;&nbsp;<FontAwesomeIcon icon="mobile-alt" />&nbsp;&nbsp;</span>
+								<span className="checkLabel">&nbsp;&nbsp;<FontAwesomeIcon className="fa-2x" icon="mobile-alt" />&nbsp;&nbsp;</span>
 							</label>
 							<br /> Cellphone Reception
 						</div>
 						<div className="col">
 							<label htmlFor="laundry" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="laundry" />
-								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="tshirt" />&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon className="fa-2x" icon="tshirt" />&nbsp;</span>
 							</label>
 							<br /> Laundry on Site
 						</div>
@@ -68,14 +68,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label htmlFor="dumpstation" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="dumpstation" />
-								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="poop" />&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon className="fa-2x" icon="poop" />&nbsp;</span>
 							</label>
 							<br /> RV Dump Station
 						</div>
 						<div className="col">
 							<label htmlFor="campstore" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="campstore" />
-								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="cash-register" />&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon className="fa-2x" icon="cash-register" />&nbsp;</span>
 							</label>
 							<br /> Campstore Available
 						</div>
@@ -85,14 +85,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label htmlFor="stafforvolunteerhostonsite" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="stafforvolunteerhostonsite" />
-								<span className="checkLabel"><FontAwesomeIcon icon="caravan" /></span>
+								<span className="checkLabel"><FontAwesomeIcon className="fa-2x" icon="caravan" /></span>
 							</label>
 							<br /> Host on Site
 						</div>
 						<div className="col">
 							<label htmlFor="potablewater" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="potablewater" />
-								<span className="checkLabel">&nbsp;&nbsp;<FontAwesomeIcon icon="tint" />&nbsp;&nbsp;</span>
+								<span className="checkLabel">&nbsp;&nbsp;<FontAwesomeIcon className="fa-2x" icon="tint" />&nbsp;&nbsp;</span>
 							</label>
 							<br /> Potable Water Available
 						</div>
@@ -102,14 +102,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label htmlFor="iceavailableforsale" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="iceavailableforsale" />
-								<span className="checkLabel"><FontAwesomeIcon icon="igloo" /></span>
+								<span className="checkLabel"><FontAwesomeIcon className="fa-2x" icon="igloo" /></span>
 							</label>
 							<br /> Ice for Sale
 						</div>
 						<div className="col">
 							<label htmlFor="firewoodforsale" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="firewoodforsale" />
-								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="fire-alt" />&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon className="fa-2x" icon="fire-alt" />&nbsp;</span>
 							</label>
 							<br /> Firewood for Sale
 						</div>
@@ -119,14 +119,14 @@ export const ParkSearch = () => {
 						<div className="col">
 							<label htmlFor="amphitheater" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="amphitheater" />
-								<span className="checkLabel"><FontAwesomeIcon icon="theater-masks" /></span>
+								<span className="checkLabel"><FontAwesomeIcon className="fa-2x" icon="theater-masks" /></span>
 							</label>
 							<br /> Amphitheaters
 						</div>
 						<div className="col">
 							<label htmlFor="foodstoragelockers" className="bg-white rounded-circle p-3">
 								<input type="checkbox" id="foodstoragelockers" />
-								<span className="checkLabel">&nbsp;<FontAwesomeIcon icon="box" />&nbsp;</span>
+								<span className="checkLabel">&nbsp;<FontAwesomeIcon className="fa-2x" icon="box" />&nbsp;</span>
 							</label>
 							<br /> Food Storage Lockers
 						</div>
@@ -144,7 +144,7 @@ export const ParkSearch = () => {
 						<input className="p-2" type='text' id='search' name='search' placeholder='Search For Parks...' />
 					</form>
 				</div>
-				<div className="col-4">
+				<div className="col-4 d-flex align-items-center justify-content-end">
 					Filter By State:
 					<select name="state" size="1" className="p-2 ml-2">
 						<option value="">All States</option>
