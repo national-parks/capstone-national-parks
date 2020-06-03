@@ -6,8 +6,9 @@ import {Route, Switch} from "react-router";
 
 import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
-import {Header} from "./sharedComponents/Header"
 import {Footer} from "./sharedComponents/Footer"
+import {Header} from "./sharedComponents/Header"
+
 
 const Routing = () => (
 	<>
@@ -15,8 +16,9 @@ const Routing = () => (
 
 			<Switch>
 				<Route exact path="/" component={Home}/>
+				<Route exact path="/Footer" component={Footer}/>
 				<Route component={FourOhFour}/>
-				<Route exact path="/" component={Footer}/>
+
 			</Switch>
 		</BrowserRouter>
 	</>
