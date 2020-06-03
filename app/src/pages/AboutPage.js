@@ -11,7 +11,7 @@ export const AboutPage = () => {
       <div className="container m-5">
         <div className="card-group">
           <div className="card pr-5">
-            <img src="../../img/saraBeck.png" className="card-img-top" alt="Picture of Sara Beck"></img>
+            <img src="../../saraBeck.png" className="card-img-top" alt="Sara Beck"></img>
               <div className="card-body">
                 <h5 className="card-title">Meet Sara Beck</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -20,7 +20,7 @@ export const AboutPage = () => {
               </div>
           </div>
           <div className="card pr-5">
-            <img src="../../img/johnRomero.png" className="card-img-top" alt="Picture of John Romero"></img>
+            <img src="../../johnRomero.png" className="card-img-top" alt="John Romero"></img>
               <div className="card-body">
                 <h5 className="card-title">Meet John Romero</h5>
                 <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -29,7 +29,7 @@ export const AboutPage = () => {
               </div>
           </div>
           <div className="card">
-            <img src="../../img/pwpImg.jpeg" className="card-img-top" alt="Picture of Mauricio Madrid"></img>
+            <img src="../../pwpImg.jpeg" className="card-img-top" alt="Mauricio Madrid"></img>
               <div className="card-body">
                 <h5 className="card-title">Meet Mauricio Madrid</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
