@@ -6,6 +6,7 @@ import {Route, Switch} from "react-router";
 import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
 import {Footer} from "./sharedComponents/Footer"
+import {AboutPage} from "./pages/AboutPage";
 import {Header} from "./sharedComponents/Header"
 import {ParkSearch} from './pages/ParkSearch/ParkSearch';
 
@@ -23,8 +24,8 @@ const Routing = () => (
 				<Route exact path="/" component={Home}/>
 				<Route exact path="/Footer" component={Footer}/>
 				<Route exact path="/park-search" component={ParkSearch}/>
+				<Route exact path="/AboutPage" component={AboutPage}/>
 				<Route component={FourOhFour}/>
-
 			</Switch>
 		</BrowserRouter>
 	</>
