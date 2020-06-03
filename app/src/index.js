@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import 'bootstrap/dist/css/bootstrap.css';
 import {BrowserRouter} from "react-router-dom";
 import {Route, Switch} from "react-router";
 
@@ -8,6 +7,13 @@ import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
 import {Footer} from "./sharedComponents/Footer"
 import {Header} from "./sharedComponents/Header"
+import {ParkSearch} from './pages/ParkSearch/ParkSearch';
+
+import 'bootstrap/dist/css/bootstrap.css';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox);
 
 
 const Routing = () => (
@@ -17,6 +23,7 @@ const Routing = () => (
 			<Switch>
 				<Route exact path="/" component={Home}/>
 				<Route exact path="/Footer" component={Footer}/>
+				<Route exact path="/park-search" component={ParkSearch}/>
 				<Route component={FourOhFour}/>
 
 			</Switch>
