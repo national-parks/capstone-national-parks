@@ -15,7 +15,6 @@ import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPo
 
 library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox);
 
-
 const Routing = () => (
 	<>
 		<BrowserRouter>
