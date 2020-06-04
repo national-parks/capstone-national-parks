@@ -14,7 +14,8 @@ const Routing = () => (
 
 			<Switch>
 				<Route exact path="/" component={Home}/>
-				<Route component={FourOhFour}/>
+				<Route component={ProfilePage}/>
+				<Route exact path="/" component={FourOhFour}/>
 			</Switch>
 		</BrowserRouter>
 	</>
