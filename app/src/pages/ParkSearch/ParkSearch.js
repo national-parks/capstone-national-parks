@@ -1,11 +1,12 @@
 import React from "react"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.css'
-import './ParkSearch.css'
+import ParkSearchStyle from "./ParkSearch.module.css"
 
 export const ParkSearch = () => {
 	return (
 		<>
+		<div className={ParkSearchStyle}>
 		<div className="container-fluid">
 			<div className="row my-3">
 
@@ -263,6 +264,7 @@ export const ParkSearch = () => {
 			</div>
 
 			</div>
+		</div>
 		</div>
 		</>
 	)
