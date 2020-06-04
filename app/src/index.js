@@ -16,16 +16,19 @@ import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPo
 
 library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox);
 
+import {ProfilePage} from './pages/ProfilePage'
+
 const Routing = () => (
 	<>
 		<BrowserRouter>
-
 			<Switch>
 				<Route exact path="/" component={Home}/>
 				<Route exact path="/Footer" component={Footer}/>
 				<Route exact path="/park-search" component={ParkSearch}/>
 				<Route exact path="/AboutPage" component={AboutPage}/>
 				<Route component={FourOhFour}/>
+				<Route component={ProfilePage}/>
+				<Route exact path="/" component={FourOhFour}/>
 			</Switch>
 		</BrowserRouter>
 	</>
