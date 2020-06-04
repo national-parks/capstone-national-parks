@@ -9,6 +9,11 @@ import {Home} from "./pages/Home";
 import {ParkPage} from "./pages/ParkPage/ParkPage";
 import {Header} from './sharedComponents/Header'
 
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox, faCampground} from '@fortawesome/free-solid-svg-icons'
+
+library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox, faCampground);
+
 const Routing = () => (
 	<>
 		<BrowserRouter>

@@ -1,3 +1,10 @@
+.amenitiesBackground {
+	color: black;
+}
+
+.border-bottom {
+	padding: 0 0 3px 0;
+}
 
 /* ------------- Fancy Checkboxes for Filter by Amenities - Changes color on click and changes checkboxes to fontawesome ------------- */
 
