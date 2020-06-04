@@ -1,5 +1,7 @@
 import React from "react"
+import image from "./"
 import Carousel from 'react-bootstrap/Carousel'
+import parkpage
 export const ParkPage = () => {
 	return (
 	<>
@@ -19,7 +21,7 @@ export const ParkPage = () => {
 	<Carousel.Item>
 		<img
 			className="d-block w-100"
-			src="http://www.fillmurray.com/800/400"
+			src=""
 			alt="Third slide"
 		/>
 
