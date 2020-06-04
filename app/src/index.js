@@ -6,7 +6,7 @@ import {Route, Switch} from "react-router";
 
 import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
-
+import {ProfilePage} from './pages/ProfilePage'
 
 const Routing = () => (
 	<>
