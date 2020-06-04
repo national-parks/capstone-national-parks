@@ -6,7 +6,7 @@ import {Route, Switch} from "react-router";
 
 import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
-import {ParkPage} from "./pages/ParkPage";
+import {ParkPage} from "./pages/ParkPage/ParkPage";
 import {Header} from './sharedComponents/Header'
 
 const Routing = () => (
