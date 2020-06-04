@@ -6,11 +6,11 @@ export const Home = () => {
 		<>
 
 			function ControlledCarousel() {
-			const [index, setIndex] = useState(0);
+			const ([index, setIndex]) = useState(0);
 
-			const handleSelect = (selectedIndex, e) => {
+			function handleSelect (selectedIndex, e) {
 			setIndex(selectedIndex);
-		};
+		}};
 
 			return (
 			<Carousel activeIndex={index} onSelect={handleSelect}>
@@ -183,7 +183,7 @@ export const Home = () => {
 				</div>
 			</div>
 
-			<div className="col-9">
+			<div className="col-9"></div>
 
 			</>
 )
