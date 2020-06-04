@@ -1,12 +1,11 @@
 import React from "react"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.css'
-import CampgroundSearchStyle from "./CampgroundSearch.module.css"
+import "./CampgroundSearch.css"
 
 export const CampgroundSearch = () => {
 	return (
 		<>
-			<div className={CampgroundSearchStyle}>
 			<div className="container-fluid">
 				<div className="row my-3">
 
@@ -273,7 +272,6 @@ export const CampgroundSearch = () => {
 					</div>
 
 				</div>
-			</div>
 			</div>
 		</>
 	)
