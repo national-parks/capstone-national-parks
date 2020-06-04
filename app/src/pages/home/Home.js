@@ -3,8 +3,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Carousel from 'react-bootstrap/Carousel'
 import { useState } from "react";
 import { CarouselComponent } from './CarouselComponent'
+import "./home.css"
+import 'bootstrap/dist/css/bootstrap.css'
 export const Home = () => {
-
 
 
 	return (<>
