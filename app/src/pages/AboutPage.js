@@ -1,5 +1,7 @@
 import React from 'react'
-import image from "./"
+import image from "./img/saraBeck.png"
+import image from "./img/johnRomero.png"
+import image from "./img/mauricioMadrid.jpg"
 
 export const AboutPage = () => {
   return (
@@ -12,7 +14,7 @@ export const AboutPage = () => {
       <div className="container m-5">
         <div className="card-group">
           <div className="card pr-5">
-            <img src="../../saraBeck.png" className="card-img-top" alt="Sara Beck"></img>
+            <img src={image} className="card-img-top" alt="Sara Beck" />
               <div className="card-body">
                 <h5 className="card-title">Meet Sara Beck</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -21,7 +23,7 @@ export const AboutPage = () => {
               </div>
           </div>
           <div className="card pr-5">
-            <img src="../../johnRomero.png" className="card-img-top" alt="John Romero"></img>
+            <img src={image} className="card-img-top" alt="John Romero" />
               <div className="card-body">
                 <h5 className="card-title">Meet John Romero</h5>
                 <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -30,7 +32,7 @@ export const AboutPage = () => {
               </div>
           </div>
           <div className="card">
-            <img src="../../pwpImg.jpeg" className="card-img-top" alt="Mauricio Madrid"></img>
+            <img src={image} className="card-img-top" alt="Mauricio Madrid" />
               <div className="card-body">
                 <h5 className="card-title">Meet Mauricio Madrid</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
