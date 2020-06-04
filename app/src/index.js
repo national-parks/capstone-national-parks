@@ -9,6 +9,7 @@ import {Footer} from "./sharedComponents/Footer"
 import {AboutPage} from "./pages/AboutPage";
 import {Header} from "./sharedComponents/Header"
 import {ParkSearch} from './pages/ParkSearch/ParkSearch';
+import {ProfilePage} from './pages/ProfilePage'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -16,7 +17,6 @@ import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPo
 
 library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox);
 
-import {ProfilePage} from './pages/ProfilePage'
 
 const Routing = () => (
 	<>
@@ -26,12 +26,12 @@ const Routing = () => (
 				<Route exact path="/Footer" component={Footer}/>
 				<Route exact path="/park-search" component={ParkSearch}/>
 				<Route exact path="/AboutPage" component={AboutPage}/>
-				<Route component={FourOhFour}/>
-				<Route component={ProfilePage}/>
+				<Route exact path="/Header" componenet={Header}/>
+				<Route exact path="/ProfilePage" component={ProfilePage}/>
 				<Route exact path="/" component={FourOhFour}/>
 			</Switch>
 		</BrowserRouter>
 	</>
 );
 
-ReactDOM.render(<Routing/>, document.querySelector('#root'));
+ReactDOM.render(Routing(), document.querySelector('#root'));
