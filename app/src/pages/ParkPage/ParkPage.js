@@ -1,10 +1,13 @@
 import React from "react"
-import Carousel from 'react-bootstrap/Carousel'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import 'bootstrap/dist/css/bootstrap.css'
+import ParkSearchStyle from "./ParkPage.module.css"
+
 
 export const ParkPage = () => {
 	return (
 	<>
-		<section>
+		<section className={ParkSearchStyle}>
 
 		<div className="container-fluid mt-5">
 			<div className="row">
