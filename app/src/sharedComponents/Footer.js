@@ -1,11 +1,14 @@
 import React from "react"
+import image from "./img/gnplm.jpg"
+import FooterStyle from "./Footer.module.css"
+import Image from 'react-bootstrap/Image'
 
 export const Footer = () => {
   return (
     <>
-
+    <div className={FooterStyle.footer}>
       <div className="card bg-dark text-white">
-        <img src="img/gnplm.jpg" className="card-img" alt="Image of Glacier National Park Lake McDonald"></img>
+        <img src={image} className="card-img" alt="Image of Glacier National Park Lake McDonald" />
           <div className="card-img-overlay">
             <h5 className="card-title">National Parks</h5>
             <div id="footerLinks" className="list-group">
@@ -19,6 +22,7 @@ export const Footer = () => {
             <p className="card-text">Last updated 3 mins ago</p>
           </div>
       </div>
+    </div>
 
 
     </>
