@@ -1,0 +1,5 @@
+.headerImage {
+    background-image: image("nationalparks.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
