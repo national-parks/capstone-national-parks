@@ -1,5 +1,19 @@
-.headerImage {
-    background-image: image("nationalparks.jpg");
+.navbar  {
+    background-image: url("nationalparks.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+}
+//***
+* Nav bar colors
+*****/
+.navbar-light .navbar-brand {
+    color: blanchedalmond;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: blanchedalmond;
+}
+.btn-primary {
+    color: #fff;
+    background-color: lightgrey;
+    border-color: #007bff;
 }

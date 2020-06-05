@@ -14,7 +14,6 @@ const Routing = () => (
 		<BrowserRouter>
 			<Header />
 			<Switch>
-				<Route exact path="/header" component={Header}/>
 				<Route exact path="/" component={Home}/>
 				<Route component={FourOhFour}/>
 			</Switch>
