@@ -10,7 +10,7 @@ import { Button } from 'react-bootstrap'
 export const Header = () => {
 
 	return (<>
-			<Navbar bg="light" expand="lg">
+			<Navbar expand="lg">
 				<Navbar.Brand href="#home">National Parks</Navbar.Brand>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
@@ -20,14 +20,12 @@ export const Header = () => {
 							<NavDropdown.Item href="#action/3.1">By Ammenities</NavDropdown.Item>
 							<NavDropdown.Item href="#action/3.2">By Location</NavDropdown.Item>
 							<NavDropdown.Item href="#action/3.3">Search</NavDropdown.Item>
-							<NavDropdown.Divider />
-						<NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
 					</NavDropdown>
 						<Nav.Link href="#home">About Us</Nav.Link>
 					</Nav>
 					<Button inline>
 						<Button variant="outline-dark">Login</Button>
-					</Button>
+				</Button>
 				</Navbar.Collapse>
 			</Navbar>
 		</>

@@ -1,13 +1,19 @@
-.navbar  {
+/*************
+Nar Bar content
+ */
+
+.navbar {
     background-image: url("nationalparks.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    padding: 10rem;
 }
 //***
-* Nav bar colors
+* Nav bar colors and button
 *****/
 .navbar-light .navbar-brand {
-    color: blanchedalmond;
+    color: rgba(0, 0, 0, 0.9);
+    background-color: darkgray;
 }
 .navbar-light .navbar-nav .nav-link {
     color: blanchedalmond;
@@ -16,4 +22,17 @@
     color: #fff;
     background-color: lightgrey;
     border-color: #007bff;
+}
+/***************
+* Nav Bar Links
+****************/
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    font-size: 1.75rem;
+    background-color: darkgrey;
+}
+
+.navbar-brand {
+    font-size: 2.25rem;
 }
