@@ -5,7 +5,7 @@ export const Footer = () => {
     <>
 
 
-      <footer id="footer">
+      <footer className="fixed-bottom" id="footer">
         <div className="footer">
           <nav className="navbar navbar-expand-lg bg-dark">
             <a className="navbar-brand" href="#">Donate to National Parks</a>
@@ -24,7 +24,7 @@ export const Footer = () => {
                   <a className="nav-link" href="#">Contact Us</a>
                 </li>
               </ul>
-              <span id="span1" className="navbar-text">Made by Sara, John, and Mauricio</span>
+              <span className="navbar-text text-white">Made by Sara, John, and Mauricio</span>
             </div>
           </nav>
         </div>
