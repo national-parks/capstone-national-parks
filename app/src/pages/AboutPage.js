@@ -3,10 +3,23 @@ import React from 'react'
 export const AboutPage = () => {
   return (
     <>
-      <div className="container mt-5">
-        <h1>Meet the Team</h1>
-        <p>We created this website while we were Full Stack Web Development student Interns
-          at CNM Ingenuity, Inc. part of Cohort 29. </p>
+      <div className="container m-5">
+        <h3>Our Goals</h3>
+        <p>I am Groot. I am Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot.
+          I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot.
+          We are Groot. We are Groot. We are Groot. We are Groot. I am Groot. I am Groot. We are Groot. I am Groot.
+          We are Groot.</p>
+
+        <p>We are Groot. I am Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot.
+          We are Groot. We are Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot. I am Groot.
+          I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot. We are Groot. I am Groot.
+          We are Groot.</p>
+
+        <p>We are Groot. We are Groot. I am Groot. I am Groot. I am Groot. I am Groot. I am Groot. We are Groot.
+          We are Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot. We are Groot.
+          I am Groot. We are Groot. We are Groot. I am Groot. I am Groot. We are Groot. I am Groot. We are Groot.
+          We are Groot.
+        </p>
       </div>
       <div className="container m-5">
         <div className="card-group">
