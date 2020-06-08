@@ -11,7 +11,7 @@ export const ProfilePage = () => {
           <div className="form-group row">
             <label htmlFor="colFormLabel1" className="col-sm-2 col-form-label">Name </label>
             <div className="col-sm-10">
-              <input type="email" className="form-control" id="colFormLabel1" placeholder="col-form-label">
+              <input type="email" className="form-control" id="colFormLabel1" placeholder="col-form-label" />
             </div>
           </div>
         </form>
@@ -19,7 +19,7 @@ export const ProfilePage = () => {
           <div className="form-group row">
             <label htmlFor="colFormLabel2" className="col-sm-2 col-form-label">Email </label>
             <div className="col-sm-10">
-              <input type="email" className="form-control" id="colFormLabel2" placeholder="col-form-label">
+              <input type="email" className="form-control" id="colFormLabel2" placeholder="col-form-label" />
             </div>
           </div>
         </form>
@@ -27,7 +27,7 @@ export const ProfilePage = () => {
           <div className="form-group row">
             <label htmlFor="colFormLabel3" className="col-sm-2 col-form-label">Phone Number </label>
             <div className="col-sm-10">
-              <input type="email" className="form-control" id="colFormLabel3" placeholder="col-form-label">
+              <input type="email" className="form-control" id="colFormLabel3" placeholder="col-form-label" />
             </div>
           </div>
           <button type="button" className="btn btn-primary">Edit Profile</button>
