@@ -1,7 +1,5 @@
 import React from 'react'
-image imageA from "./img/person.png"
-image imageB from "./img/person.png"
-image imageC from "./img/person.png"
+import image
 
 export const AboutPage = () => {
   return (
