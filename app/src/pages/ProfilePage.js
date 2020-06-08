@@ -1,4 +1,5 @@
 import React from "react"
+import Image from "../../../img/parkPlaceHolder.png"
 
 export const ProfilePage = () => {
   return (
@@ -6,7 +7,7 @@ export const ProfilePage = () => {
       <div className="container m-5">
         <form>
           <div id="profilePic">
-            <img src="img/person.png" className="img-fluid img-thumbnail" alt="Picture Place Holder" />
+            <img src= {Image} className="img-fluid img-thumbnail" alt="Picture Place Holder" />
           </div>
           <div className="form-group row">
             <label htmlFor="colFormLabel1" className="col-sm-2 col-form-label">Name </label>
