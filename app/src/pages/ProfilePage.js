@@ -6,7 +6,7 @@ export const ProfilePage = () => {
       <div className="container m-5">
         <form>
           <div id="profilePic">
-            <img src="img/person.png" className="img-fluid img-thumbnail" alt="Picture Place Holder">
+            <img src="img/person.png" className="img-fluid img-thumbnail" alt="Picture Place Holder" />
           </div>
           <div className="form-group row">
             <label htmlFor="colFormLabel1" className="col-sm-2 col-form-label">Name </label>
@@ -37,7 +37,7 @@ export const ProfilePage = () => {
         <h1>Favorite Parks</h1>
         <div className="card-deck">
           <div className="card">
-            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder">
+            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder" />
               <div className="card-body">
                 <h5 className="card-title">First Favorite Park</h5>
                 <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
@@ -46,7 +46,7 @@ export const ProfilePage = () => {
               </div>
           </div>
           <div className="card">
-            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder">
+            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder" />
               <div className="card-body">
                 <h5 className="card-title">Second Favorite Park</h5>
                 <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -55,7 +55,7 @@ export const ProfilePage = () => {
               </div>
           </div>
           <div className="card">
-            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder">
+            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder" />
               <div className="card-body">
                 <h5 className="card-title">Third Favorite Park</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -70,7 +70,7 @@ export const ProfilePage = () => {
         <h1>Want to Visit Parks</h1>
         <div className="card-deck">
           <div className="card">
-            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder">
+            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder" />
               <div className="card-body">
                 <h5 className="card-title">First Want to Visit Park</h5>
                 <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
@@ -79,7 +79,7 @@ export const ProfilePage = () => {
               </div>
           </div>
           <div className="card">
-            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder">
+            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder" />
               <div className="card-body">
                 <h5 className="card-title">Second Want to Visit Park</h5>
                 <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -88,7 +88,7 @@ export const ProfilePage = () => {
               </div>
           </div>
           <div className="card">
-            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder">
+            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder" />
               <div className="card-body">
                 <h5 className="card-title">Third Want to Visit Park</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
@@ -103,7 +103,7 @@ export const ProfilePage = () => {
         <h1>Visited Parks</h1>
         <div className="card-deck">
           <div className="card">
-            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder">
+            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder" />
               <div className="card-body">
                 <h5 className="card-title">First Visited Park</h5>
                 <p className="card-text">This is a longer card with supporting text below as a natural lead-in to
@@ -112,7 +112,7 @@ export const ProfilePage = () => {
               </div>
           </div>
           <div className="card">
-            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder">
+            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder" />
               <div className="card-body">
                 <h5 className="card-title">Second Visited Park</h5>
                 <p className="card-text">This card has supporting text below as a natural lead-in to additional
@@ -121,7 +121,7 @@ export const ProfilePage = () => {
               </div>
           </div>
           <div className="card">
-            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder">
+            <img src="img/parkPlaceHolder.png" className="card-img-top" alt="Park Image Place Holder" />
               <div className="card-body">
                 <h5 className="card-title">Third Visited Park</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
