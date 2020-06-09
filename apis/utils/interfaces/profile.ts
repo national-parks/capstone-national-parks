@@ -3,5 +3,6 @@ export interface Profile {
     profileActivationToken : number,
     profileDisplayName : string,
     profileEmail : string,
-    profileHash : string,
+    profileImage : object,
+    profileHash : string
 }
