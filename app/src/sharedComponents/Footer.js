@@ -16,10 +16,10 @@ export const Footer = () => {
                   <p><a href="" className="text-white bg-dark">Home Page </a></p>
                   <p><a href="" className="text-white bg-dark">Campground Page </a></p>
                   <p><a href="" className="text-white bg-dark">Park Page </a></p>
-              </div>
-                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <p className="card-text">Last updated 3 mins ago</p>
+                </div>
+                  <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                    content. This content is a little bit longer.</p>
+                  <p className="card-text">Last updated 3 mins ago</p>
             </div>
         </div>
       </div>
