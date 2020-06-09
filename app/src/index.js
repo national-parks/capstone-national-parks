@@ -6,7 +6,6 @@ import {Route, Switch} from "react-router";
 import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
 import {ParkSearch} from './pages/ParkSearch/ParkSearch';
-import { CampgroundSearch } from './pages/CampgroundSearch/CampgroundSearch'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -20,7 +19,6 @@ const Routing = () => (
 			<Switch>
 				<Route exact path="/" component={Home}/>
 				<Route exact path="/park-search" component={ParkSearch}/>
-				<Route exact path="/campground-search" component={CampgroundSearch}/>
 				<Route component={FourOhFour}/>
 			</Switch>
 		</BrowserRouter>
