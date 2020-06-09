@@ -6,27 +6,24 @@ import Image from 'react-bootstrap/Image'
 export const Footer = () => {
   return (
     <>
-<<<<<<< HEAD
-    <div className={FooterStyle.footer}>
-      <div className="card bg-dark text-white">
-        <img src={image} className="card-img" alt="Image of Glacier National Park Lake McDonald" />
-          <div className="card-img-overlay">
-            <h5 className="card-title">National Parks</h5>
-            <div id="footerLinks" className="list-group">
-              <p><a href="" className="text-white bg-dark">About Us </a></p>
-              <p><a href="" className="text-white bg-dark">Home Page </a></p>
-              <p><a href="" className="text-white bg-dark">Campground Page </a></p>
-              <p><a href="" className="text-white bg-dark">Park Page </a></p>
+      <div className={FooterStyle.footer}>
+        <div className="card bg-dark text-white">
+          <img src={image} className="card-img" alt="Image of Glacier National Park Lake McDonald" />
+            <div className="card-img-overlay">
+              <h5 className="card-title">National Parks</h5>
+                <div id="footerLinks" className="list-group">
+                  <p><a href="" className="text-white bg-dark">About Us </a></p>
+                  <p><a href="" className="text-white bg-dark">Home Page </a></p>
+                  <p><a href="" className="text-white bg-dark">Campground Page </a></p>
+                  <p><a href="" className="text-white bg-dark">Park Page </a></p>
+              </div>
+                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <p className="card-text">Last updated 3 mins ago</p>
             </div>
-            <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p className="card-text">Last updated 3 mins ago</p>
-          </div>
+        </div>
       </div>
-    </div>
 
-
-=======
       <footer className="fixed-bottom" id="footer">
         <div className="footer">
           <nav className="navbar navbar-expand-lg bg-dark">
@@ -51,7 +48,6 @@ export const Footer = () => {
           </nav>
         </div>
       </footer>
->>>>>>> footer
-    </>
+  </>
   )
 }
