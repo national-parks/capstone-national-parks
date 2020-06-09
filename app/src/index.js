@@ -29,7 +29,10 @@ const Routing = () => (
 				<Route exact path="/Header" componenet={Header}/>
 				<Route exact path="/ProfilePage" component={ProfilePage}/>
 				<Route exact path="/" component={FourOhFour}/>
+				<Route component={FourOhFour}/>
+
 			</Switch>
+			<Footer />
 		</BrowserRouter>
 	</>
 );
