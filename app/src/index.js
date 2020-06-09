@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter} from "react-router-dom";
 import {Route, Switch} from "react-router";
 
-import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
 import {Footer} from "./sharedComponents/Footer";
 import {AboutPage} from "./pages/AboutPage";
@@ -16,6 +15,9 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox} from '@fortawesome/free-solid-svg-icons'
 
 library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox);
+
+import {Header} from "./sharedComponents/Header"
+import {FourOhFour} from "./pages/FourOhFour";
 
 
 const Routing = () => (
