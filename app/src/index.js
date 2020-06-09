@@ -5,7 +5,7 @@ import {Route, Switch} from "react-router";
 
 import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
-import {ParkSearch} from './pages/ParkSearch/ParkSearch';
+import {ParkSearch} from './pages/ParkSearch/ParkSearch';:
 
 import 'bootstrap/dist/css/bootstrap.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
