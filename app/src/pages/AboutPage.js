@@ -1,33 +1,30 @@
 import React from 'react'
-import image
+import image from '../img/person.png'
 
 export const AboutPage = () => {
   return (
     <>
       <div className="container m-5">
         <h3>Our Goals</h3>
-        <p>I am Groot. I am Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot.
-          I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot.
-          We are Groot. We are Groot. We are Groot. We are Groot. I am Groot. I am Groot. We are Groot. I am Groot.
-          We are Groot.</p>
-
-        <p>We are Groot. I am Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot.
-          We are Groot. We are Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot. I am Groot.
-          I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot. We are Groot. I am Groot.
-          We are Groot.</p>
-
-        <p>We are Groot. We are Groot. I am Groot. I am Groot. I am Groot. I am Groot. I am Groot. We are Groot.
-          We are Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot. We are Groot.
-          I am Groot. We are Groot. We are Groot. I am Groot. I am Groot. We are Groot. I am Groot. We are Groot.
-          We are Groot.
-        </p>
+          <p>I am Groot. I am Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot.
+            I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot.
+            We are Groot. We are Groot. We are Groot. We are Groot. I am Groot. I am Groot. We are Groot. I am Groot.
+            We are Groot.</p>
+          <p>We are Groot. I am Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot.
+            We are Groot. We are Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot. I am Groot.
+            I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot. We are Groot. I am Groot.
+            We are Groot.</p>
+          <p>We are Groot. We are Groot. I am Groot. I am Groot. I am Groot. I am Groot. I am Groot. We are Groot.
+            We are Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot. We are Groot.
+            I am Groot. We are Groot. We are Groot. I am Groot. I am Groot. We are Groot. I am Groot. We are Groot.
+            We are Groot.</p>
       </div>
       <div className="container m-5">
         <h5>Meet Sara</h5>
         <div className="card mb-3" style="max-width: 540px;">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src= {imageA} className="card-img" alt="Temp picture" />
+              <img src= {image} className="card-img" alt="Temp picture" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -45,7 +42,7 @@ export const AboutPage = () => {
         <div className="card mb-3" style="max-width: 540px;">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src= {imageB} className="card-img" alt="Picture of John" />
+              <img src= {image} className="card-img" alt="Picture of John" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -63,7 +60,7 @@ export const AboutPage = () => {
         <div className="card mb-3" style="max-width: 540px;">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src= {imageC} className="card-img" alt="Picture of Mauricio" />
+              <img src= {image} className="card-img" alt="Picture of Mauricio" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
