@@ -24,7 +24,7 @@ export const AboutPage = () => {
         <div className="card mb-3" style="max-width: 540px;">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src= {image} className="card-img" alt="Temp picture" />
+              <img src= {image} className="card-img" alt="Temp picture of Sara" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -42,7 +42,7 @@ export const AboutPage = () => {
         <div className="card mb-3" style="max-width: 540px;">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src= {image} className="card-img" alt="Picture of John" />
+              <img src= {image} className="card-img" alt="Temp picture of John" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -60,7 +60,7 @@ export const AboutPage = () => {
         <div className="card mb-3" style="max-width: 540px;">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src= {image} className="card-img" alt="Picture of Mauricio" />
+              <img src= {image} className="card-img" alt="temp picture of Mauricio" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
