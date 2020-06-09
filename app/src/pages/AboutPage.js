@@ -21,7 +21,7 @@ export const AboutPage = () => {
       </div>
       <div className="container m-5">
         <h5>Meet Sara</h5>
-        <div className="card mb-3" style="max-width: 540px;">
+        <div className="card mb-3" style="max-width: 540px">
           <div className="row no-gutters">
             <div className="col-md-4">
               <img src= {image} className="card-img" alt="Temp picture of Sara" />
@@ -39,7 +39,7 @@ export const AboutPage = () => {
       </div>
       <div className="container m-5">
         <h5>Meet John</h5>
-        <div className="card mb-3" style="max-width: 540px;">
+        <div className="card mb-3" style="max-width: 540px">
           <div className="row no-gutters">
             <div className="col-md-4">
               <img src= {image} className="card-img" alt="Temp picture of John" />
@@ -57,7 +57,7 @@ export const AboutPage = () => {
       </div>
       <div className="container m-5">
         <h5>Meet Mauricio</h5>
-        <div className="card mb-3" style="max-width: 540px;">
+        <div className="card mb-3" style="max-width: 540px">
           <div className="row no-gutters">
             <div className="col-md-4">
               <img src= {image} className="card-img" alt="temp picture of Mauricio" />
