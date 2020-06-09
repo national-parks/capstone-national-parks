@@ -3,8 +3,6 @@ import React from "react"
 export const Footer = () => {
   return (
     <>
-
-
       <footer className="fixed-bottom" id="footer">
         <div className="footer">
           <nav className="navbar navbar-expand-lg bg-dark">
@@ -29,8 +27,6 @@ export const Footer = () => {
           </nav>
         </div>
       </footer>
-
-
     </>
   )
 }
