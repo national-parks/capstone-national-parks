@@ -32,7 +32,6 @@ const Routing = () => (
 				<Route component={FourOhFour}/>
 
 			</Switch>
-			<Footer />
 		</BrowserRouter>
 	</>
 );
