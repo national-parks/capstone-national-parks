@@ -1,5 +1,5 @@
 import React from 'react'
-// import image from '../img/person.png'
+import image from '../img/person.png'
 
 export const AboutPage = () => {
   return (
@@ -24,7 +24,7 @@ export const AboutPage = () => {
         <div className="card mb-3">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src= "../img/person.png" className="card-img" alt="Temp pic of Sara" />
+              <img src={image} className="card-img" alt="Temp pic of Sara" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -42,7 +42,7 @@ export const AboutPage = () => {
         <div className="card mb-3">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src= "../img/person.png" className="card-img" alt="Temp pic of John" />
+              <img src={image} className="card-img" alt="Temp pic of John" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -60,7 +60,7 @@ export const AboutPage = () => {
         <div className="card mb-3">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src= "../img/person.png" className="card-img" alt="temp pic of Mauricio" />
+              <img src={image} className="card-img" alt="temp pic of Mauricio" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
