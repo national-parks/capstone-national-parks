@@ -16,11 +16,11 @@ export const Header = () => {
 		<Navbar.Collapse id="basic-navbar-nav">
 			<Nav className="ml-auto">
 				<Nav.Link href="#home">Home</Nav.Link>
-				<NavDropdown title="Browse Parks" id="basic-nav-dropdown">
-					<NavDropdown.Item href="#action/3.1">By Ammenities</NavDropdown.Item>
-					<NavDropdown.Item href="#action/3.2">By Location</NavDropdown.Item>
-					<NavDropdown.Item href="#action/3.3">Search</NavDropdown.Item>
-				</NavDropdown>
+					<NavDropdown title="Browse Parks" id="basic-nav-dropdown">
+						<NavDropdown.Item href="#action/3.1">By Ammenities</NavDropdown.Item>
+						<NavDropdown.Item href="#action/3.2">By Location</NavDropdown.Item>
+						<NavDropdown.Item href="#action/3.3">Search</NavDropdown.Item>
+					</NavDropdown>
 				<Nav.Link href="#home">About Us</Nav.Link>
 			</Nav>
 			<Button inline>
