@@ -1,13 +1,13 @@
 import React from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
 import {BrowserRouter} from "react-router-dom";
 import {Route, Switch} from "react-router";
 
 import {FourOhFour} from "./pages/FourOhFour";
 import {Home} from "./pages/Home";
-import {Footer} from "./sharedComponents/Footer"
+import {Footer} from "./sharedComponents/Footer";
 import {AboutPage} from "./pages/AboutPage";
-import {Header} from "./sharedComponents/Header"
+import {Header} from "./sharedComponents/Header";
 import {ParkSearch} from './pages/ParkSearch/ParkSearch';
 import {ProfilePage} from './pages/ProfilePage'
 
