@@ -16,7 +16,7 @@ DROP TABLE IF EXISTS profile;
 CREATE TABLE profile (
     profileId BINARY(16) NOT NULL,
     profileActivationToken CHAR(32),
-    profileAvatar,
+    profileAvatar BLOB,
     profileDisplayName VARCHAR(16) NOT NULL,
     profileEmail VARCHAR(128) NOT NULL,
     profileHash VARCHAR(32) NOT NULL,
