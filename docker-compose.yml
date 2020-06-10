@@ -3,21 +3,22 @@ services:
   sql:
     build: ./sql
     volumes:
-      - ddc-twitter:/var/lib/mysql
+      - national-parks:/var/lib/mysql
     env_file:
       - ./.env
     command: --default-authentication-plugin=mysql_native_password
     ports:
       - 3306:3306
   node:
-    build: ./backend
+    build: ./apis
+    container_name: "backend"
     env_file:
       - .env
     ports:
-      - 8080:5000
+      - 8080:4200
     user: "node"
     volumes:
-      - ./backend/src:/home/node/app/src
-      - ./backend/tsconfig.json:/home/node/app/tsconfig.json
+      - ./apis/src:/home/node/app/src
+      - ./apis/tsconfig.json:/home/node/app/tsconfig.json
 volumes:
-  express-misquote:
+  national-parks:
