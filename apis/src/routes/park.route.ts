@@ -5,5 +5,5 @@ import {getParkByParkId} from "../controllers/park.controller";
 
 export const parkRoute = Router()
 
-parkRoute.route('/park/:parkId')
+parkRoute.route('/:parkId')
     .get(getParkByParkId)
