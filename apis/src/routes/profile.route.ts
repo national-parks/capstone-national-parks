@@ -8,5 +8,8 @@ export const profileRoute = Router()
 profileRoute.route('/:profileId')
     .get(getProfileByProfileId)
 
+profileRoute.route('/:profileEmail')
+    .get(getProfileByProfileEmail)
+
 profileRoute.route('/activate/:activationToken')
     .get(getProfileByProfileActivationToken)
