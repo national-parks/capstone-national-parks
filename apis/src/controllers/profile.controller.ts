@@ -4,7 +4,18 @@ import {Profile} from "../../utils/interfaces/profile";
 import {selectProfileByProfileActivationToken} from "../../utils/profile/selectProfileByProfileActivationToken";
 import {selectProfileByProfileId} from "../../utils/profile/selectProfileByProfileId";
 import {selectProfileByProfileEmail} from "../../utils/profile/selectProfileByProfileEmail";
+import {insertProfile} from "../../utils/profile/insertProfile";
 
+export async function postProfile(request: Request, response: Response, nextFunction: NextFunction) {
+    try {
+        const {profileActivationToken, profileAvatar, profileDisplayName, profileEmail, profileHash} = request.body
+        const profile: Profile = {profileId: null, profileActivationToken, profileAvatar, profileDisplayName, profileEmail, profileHash}
+        const result = await insertProfile(profile)
+        return response.json({status: 200, data: null, message: result})
+    } catch (error) {
+        console.log(error)
+    }
+}
 
 export async function getProfileByProfileActivationToken(request: Request, response: Response, nextFunction: NextFunction) {
     try {
