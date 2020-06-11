@@ -5,5 +5,5 @@ import {getCampgroundByCampgroundId} from "../controllers/campground.controller"
 
 export const campgroundRoute = Router()
 
-campgroundRoute.route('/campground/:campgroundId')
+campgroundRoute.route('/:campgroundId')
     .get(getCampgroundByCampgroundId)
