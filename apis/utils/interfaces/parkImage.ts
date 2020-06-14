@@ -1,5 +1,5 @@
 export interface ParkImage {
-    parkImageId : string,
+    parkImageId : string|null,
     parkImageCaption : string,
     parkImageParkId : string,
     parkImageUrl : string

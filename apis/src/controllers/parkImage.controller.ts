@@ -1,16 +1,27 @@
 import {NextFunction, Request, Response} from "express";
 import {Status} from "../../utils/interfaces/status";
 import {ParkImage} from "../../utils/interfaces/parkImage";
-import {insertParkImage} from "../../utils/interfaces/parkImage/insertParkImage";
+import {selectParkImageByParkImageParkId} from "../../utils/parkImage/selectParkImageByParkImageParkId";
+import {selectParkImageByParkImageId} from "../../utils/parkImage/selectParkImageByParkImageId";
 
-export async function postParkImage(request: Request, response: Response, nextFunction: NextFunction) {
+
+export async function getParkImagesByParkImageParkId(request: Request, response: Response, nextFunction: NextFunction) {
     try {
-        const {parkImageParkId, parkImageCaption, parkImageUrl} = request.body
-        const parkImage: ParkImage = {parkImageId: null, parkImageParkId, parkImageCaption, parkImageUrl}
-        const result = await insertParkImage(parkImage)
-        return response.json({status: 200, data: null, message: result})
+        const {parkImageParkId} = request.params
+        const result = await selectParkImageByParkImageParkId(parkImageParkId)
+        return response.json({status: 200, data: result, message: null})
     } catch (error) {
         console.log(error)
     }
 }
 
+
+export async function getParkImagesByParkImageId(request: Request, response: Response, nextFunction: NextFunction) {
+    try {
+        const {parkImageId} = request.params
+        const result = await selectParkImageByParkImageId(parkImageId)
+        return response.json({status: 200, data: result, message: null})
+    } catch (error) {
+        console.log(error)
+    }
+}
