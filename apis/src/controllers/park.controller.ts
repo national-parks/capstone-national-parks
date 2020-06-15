@@ -2,7 +2,7 @@ import {NextFunction, Request, Response} from "express";
 import {Status} from "../../utils/interfaces/status";
 import {selectParkByParkId} from "../../utils/park/selectParkByParkId";
 import {selectParkByParkDescription} from "../../utils/park/seletctParkByParkDescription";
-import {selectParkByParkFullName} from "../../utils/park/selectParkbyParkFullName";
+import {selectParkByParkFullName} from "../../utils/park/selectParkByParkFullName";
 
 
 export async function getParkByParkId(request: Request, response: Response, nextFunction: NextFunction) {
