@@ -1,5 +1,5 @@
 import {Router} from "express";
-import {getParkImagesByParkImageParkId, postParkImage} from "../controllers/parkImage.controller";
+import {getParkImagesByParkImageParkId, postParkImageId} from "../controllers/parkImage.controller";
 import {getParkImagesByParkImageId} from "../controllers/parkImage.controller";
 
 export const ParkImageRoute = Router()
