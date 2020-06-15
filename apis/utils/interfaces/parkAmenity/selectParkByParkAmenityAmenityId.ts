@@ -1,3 +1,4 @@
+import {ParkAmenity} from "../parkAmenity";
 import {connect} from "../../src/database";
 
 export async function selectParkByParkAmenityAmenityId(parkAmenityAmenityId: string) {
