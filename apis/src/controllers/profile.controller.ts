@@ -5,6 +5,7 @@ import {selectProfileByProfileActivationToken} from "../../utils/profile/selectP
 import {selectProfileByProfileId} from "../../utils/profile/selectProfileByProfileId";
 import {selectProfileByProfileEmail} from "../../utils/profile/selectProfileByProfileEmail";
 import {insertProfile} from "../../utils/profile/insertProfile";
+import {updateProfile} from "../../utils/profile/updateProfile";
 
 export async function getProfileByProfileActivationToken(request: Request, response: Response, nextFunction: NextFunction) {
     try {
@@ -47,6 +48,18 @@ export async function postProfileController(request: Request, response: Response
         const {profileAvatar, profileDisplayName, profileEmail} = request.body
         const profile: Profile = {profileId: null, profileActivationToken, profileAvatar, profileDisplayName, profileEmail, profileHash}
         const result = await insertProfile(profile)
+        return response.json({status: 200, data: null, message: result})
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export async function putProfileController(request: Request, response: Response, nextFunction: NextFunction) {
+    try {
+        const {profileAvatar, profileDisplayName, profileEmail, profileHash} = request.body
+        const {profileId, profileActivationToken} = request.params;
+        const profile: Profile= {profileId, profileActivationToken, profileAvatar, profileDisplayName, profileEmail, profileHash}
+        const result = await updateProfile(profile)
         return response.json({status: 200, data: null, message: result})
     } catch (error) {
         console.log(error)
