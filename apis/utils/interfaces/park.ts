@@ -1,6 +1,6 @@
 export interface park {
-    parkId : string,
-    parkContact : object,
+    parkId : string| null,
+    parkContact : string,
     parkDescription : string,
     parkFullName : string,
     parkState : string,
