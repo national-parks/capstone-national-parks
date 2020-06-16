@@ -5,7 +5,7 @@ export async function selectParkByParkId(ParkId : string){
     try {
         const mysqlConnection = await connect();
 
-        const mySqlQuery = 'SELECT UNHEX(parkId), parkContact, parkDescription, parkFullName, parkState, parkOperatingHours FROM park WHERE parkId = (:parkId)';
+        const mySqlQuery = 'SELECT HEX(parkId), parkContact, parkDescription, parkFullName, parkState, parkOperatingHours FROM park WHERE parkId = (:parkId)';
 
         const [rows] =  await mysqlConnection.execute(mySqlQuery, {ParkId});
 
