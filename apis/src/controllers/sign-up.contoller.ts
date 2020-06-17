@@ -36,11 +36,11 @@ export async function signupProfileController(request: Request, response: Respon
         const profile: Profile = {
             profileId: null,
             profileActivationToken,
-            profileAtHandle,
-            profileAvatarUrl,
+            profileAvatar,
+            profileDisplayName
             profileEmail,
             profileHash,
-            profilePhone
+
         };
 
         const result = await insertProfile(profile)

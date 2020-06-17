@@ -1,36 +1,49 @@
 export const signupValidator = {
-    profileAtHandle: {
+    profileId: {
         escape: true,
         trim: true,
         isLength: {
-            errorMessage: 'profileAtHandle must be between seven and thirty two characters',
+            errorMessage: 'profileId must be valid',
             options: { min: 7, max: 32 }
         }
     },
-    profileEmail: {
+    profileActivationToken: {
         isEmail: {
-            errorMessage: 'Please provide a valid email'
+            errorMessage: 'Check e-mail for activation token'
         },
         normalizeEmail: true,
         trim: true
     },
-    profilePassword: {
+    profileAvatar: {
         isLength: {
-            errorMessage: 'Password must be at least eight characters',
-            options: { min: 8 }
+            errorMessage: '',
+            options: { max: 255 }
         },
         trim: true,
         escape: true
     },
-    profilePasswordConfirm: {
+    profileDisplayName: {
         isLength: {
-            errorMessage: 'confirm password must be at least eight characters',
-            options: { min: 8 }
+            errorMessage: 'Display Name limited to 16 characters',
+            options: { max: 16 }
         },
         trim: true,
         escape: true
     },
-    profilePhone: {
+    profileEmail: {
+        escape: true,
+        trim: true,
+        isLength: {
+            errorMessage: 'Email max length is 128 characters',
+            options: { max: 128 },
+        },
+        optional: {
+            options: {
+                nullable: true
+            }
+        }
+    },
+    profileHash: {
         escape: true,
         trim: true,
         optional: {
