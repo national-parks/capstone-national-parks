@@ -7,6 +7,7 @@ import morgan from 'morgan';
 import {indexRoutes} from './routes/index.route';
 import {campgroundRoute} from "./routes/campground.route";
 import {profileRoute} from "./routes/profile.route";
+import {parkStatusRoutes} from './routes/parkStatus.route'
 
 // The following class creates the app and instantiates the server
 export class App {
@@ -39,6 +40,9 @@ export class App {
         this.app.use(indexRoutes);
         this.app.use("/campground", campgroundRoute);
         this.app.use("/profile", profileRoute);
+        this.app.use(parkStatusRoutes);
+    }
+>>>>>>> parkstatus-mysql
 
     // starts the server and tells the terminal to post a message that the server is running and on what port
     public async listen (): Promise<void> {
