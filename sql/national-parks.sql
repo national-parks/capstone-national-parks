@@ -30,10 +30,10 @@ CREATE TABLE profile (
 CREATE TABLE park (
     parkId BINARY(16) NOT NULL,
     parkContact VARCHAR(256),
-    parkDescription VARCHAR(256),
+    parkDescription VARCHAR(1024),
     parkFullName VARCHAR(64) NOT NULL,
     parkState CHAR(2),
-    parkOperatingHours VARCHAR(256),
+    parkOperatingHours VARCHAR(1024),
 
     UNIQUE(parkId),
     PRIMARY KEY(parkId)
