@@ -46,15 +46,32 @@ export class App {
         maxAge: "3h"
     }
     this.app.use(session(sessionConfig))
-    // private method for setting up routes in their basic sense (ie. any route that performs an action on profiles starts with /profiles)
-    private routes () {
-        this.app.use(indexRoutes);
-        this.app.use("/campground", campgroundRoute);
-    }
+    this.app.use(passport.initialize());
+    this.app.use(passport.session());
+    // this.app.use(cookieParser())
+    // this.app.use(csrf({cookie: {key:"XSRF-TOKEN", maxAge:3600}}))
+    // this.app.use(function (err : any, req: any, res: any, next: any) {
+    //
+    //   if (err.code !== 'EBADCSRFTOKEN') return next(err)
+    //
+    //   // handle CSRF token errors here
+    //   res.status(403)
+    //   res.send('you done fucked up aaaron')
+    // })
+}
 
-    // starts the server and tells the terminal to post a message that the server is running and on what port
-    public async listen (): Promise<void> {
-        await this.app.listen(this.app.get('port'));
-        console.log('Server on port', this.app.get('port'));
-    }
+// private method for setting up routes in their basic sense (ie. any route that performs an action on profiles starts with /profiles)
+private routes() {
+    //TODO add "/apis"
+    this.app.use('/apis', indexRoutes)
+    this.app.use('/apis/misquote', MisquoteRoute)
+    this.app.use('/apis/sign-up', SignupRouter)
+    this.app.use('/apis/sign-in', SignInRouter)
+}
+
+// starts the server and tells the terminal to post a message that the server is running and on what port
+public async listen(): Promise<void> {
+    await this.app.listen(this.app.get('port'))
+    console.log('Express application built successfully')
+}
 }
