@@ -1,7 +1,8 @@
-
 import express, {Application, Errback, ErrorRequestHandler, NextFunction, Request, Response} from 'express';
-
 import morgan from 'morgan';
+const cookieParser = require('cookie-parsar')
+const session = require("express-session")
+const memoryStore = require("memorystore")(session)
 
 // Routes
 import {indexRoutes} from './routes/index.route';
