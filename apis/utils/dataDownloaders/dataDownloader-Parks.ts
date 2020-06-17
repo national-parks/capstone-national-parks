@@ -1,6 +1,6 @@
 import axios from "axios"
 import {insertPark} from "../park/insertPark";
-import {park} from  "../interfaces/park";
+import {Park} from  "../interfaces/park";
 
 function dataDownloader() : Promise<any> {
     return main()
@@ -33,8 +33,9 @@ function dataDownloader() : Promise<any> {
                         //     "parkCode": park.parkCode,
                         //     "fullName": park.fullName
                         // })
-
-                        const park: park={parkId: null, parkContact: parkList.contacts, parkDescription: parkList.description, parkFullName: parkList.fullName, parkState: parkList.states, parkOperatingHours: parkList.operatingHours}
+                    console.log("description length",parkList.description.length)
+                        console.log("description",parkList.description)
+                        const park: Park={parkId: null, parkContact: parkList.contacts.phoneNumbers[0].phoneNumber, parkDescription: parkList.description, parkFullName: parkList.fullName, parkState: parkList.states[0], parkOperatingHours: parkList.operatingHours[0].description}
                         const result = await insertPark(park)
 
                     }
@@ -42,7 +43,7 @@ function dataDownloader() : Promise<any> {
             }
 
         } catch (error) {
-            console.error(error)
+            console.error(error.message)
         }
     }
 }
