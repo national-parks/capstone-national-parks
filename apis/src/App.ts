@@ -6,7 +6,7 @@ import morgan from 'morgan';
 // Routes
 import {indexRoutes} from './routes/index.route';
 import {campgroundRoute} from "./routes/campground.route";
-
+import {profileRoute} from "./routes/profile.route";
 
 // The following class creates the app and instantiates the server
 export class App {
@@ -38,7 +38,7 @@ export class App {
     private routes () {
         this.app.use(indexRoutes);
         this.app.use("/campground", campgroundRoute);
-    }
+        this.app.use("/profile", profileRoute);
 
     // starts the server and tells the terminal to post a message that the server is running and on what port
     public async listen (): Promise<void> {
