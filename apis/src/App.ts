@@ -2,11 +2,12 @@ import express, {Application, Errback, ErrorRequestHandler, NextFunction, Reques
 import morgan from 'morgan';
 const cookieParser = require('cookie-parsar')
 const session = require("express-session")
-const memoryStore = require("memorystore")(session)
+const MemoryStore = require("memorystore")(session)
 
 // Routes
 import {indexRoutes} from './routes/index.route';
 import {campgroundRoute} from "./routes/campground.route";
+//import {MemoryStore} from "express-session";
 
 
 // The following class creates the app and instantiates the server
@@ -35,6 +36,16 @@ export class App {
         this.app.use(express.json());
     }
 
+    const sessionConfig = {
+        store: new MemoryStore({
+            checkPeriod: 10800,
+        }),
+        secret: process.env.sessionSecret,
+        saveUninitialized: true,
+        resave: true,
+        maxAge: "3h"
+    }
+    this.app.use(session(sessionConfig))
     // private method for setting up routes in their basic sense (ie. any route that performs an action on profiles starts with /profiles)
     private routes () {
         this.app.use(indexRoutes);
