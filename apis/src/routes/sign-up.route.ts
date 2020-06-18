@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { signupProfileController } from '../controllers/sign-up.controller';
+import { signupProfileController } from "../controllers/sign-up.contoller";
 import {asyncValidatorController} from "../controllers/asyncValidator.controller";
 import {signupValidator} from "../validators/sign-up.validator";
 import {activationController} from "../controllers/activation.controller";
@@ -12,4 +12,4 @@ export const SignupRouter = Router();
 SignupRouter.route('/')
     .post(asyncValidatorController(checkSchema(signupValidator)), signupProfileController);
 
-SignupRouter.route('/activation/:activation').get(activationController)
+SignupRouter.route('/activation/:activation').get(activationController);

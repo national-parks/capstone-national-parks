@@ -8,7 +8,8 @@ export async function selectProfileByProfileActivationToken(profileActivationTok
         const mySqlQuery = 'SELECT UNHEX(profileId), profileDisplayName, profileEmail FROM profile WHERE profileActivationToken = (:profileActivationToken)';
 
         const [rows] =  await mysqlConnection.execute(mySqlQuery, {profileActivationToken});
-
+        // @ts-ignore is required so that rows can be interacted with like the array it is
+        return rows.length !== 0 ? {...rows[0]} : undefined;
         return rows
     } catch (error) {
         console.log(error);

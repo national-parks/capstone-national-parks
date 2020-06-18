@@ -1,7 +1,7 @@
 import {NextFunction, Request, Response} from "express";
 import {Status} from "../../utils/interfaces/status";
 import {Campground} from "../../utils/interfaces/campground";
-import {selectCampgroundByCampgroundId} from "../../utils/profile/selectCampgroundByCampgroundId";
+import {selectCampgroundByCampgroundId} from "../../utils/campground/selectCampgroundByCampgroundId"
 
 
 

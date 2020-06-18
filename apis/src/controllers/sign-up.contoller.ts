@@ -1,11 +1,11 @@
 import {Request, Response} from 'express';
 // DB
 import {setActivationToken, setHash} from '../../utils/auth.utils';
-import {Profile} from "../../utils/interfaces/Profile";
+import {Profile} from "../../utils/interfaces/profile";
 import {Status} from "../../utils/interfaces/status";
 import MailComposer from "nodemailer/lib/mail-composer";
 import {insertProfile} from "../../utils/profile/insertProfile";
-const mailgun = require("mailgun-js")
+const mailgun = require("mailgun-js");
 
 // Interfaces (represent the DB model and types of the columns associated with a specific DB table)
 
@@ -13,22 +13,21 @@ const mailgun = require("mailgun-js")
 export async function signupProfileController(request: Request, response: Response) {
     try {
 
-
-        const {profileAtHandle, profileEmail, profilePhone, profilePassword} = request.body;
+        const {profileEmail, profilePassword, profileDisplayName} = request.body;
         const profileHash = await setHash(profilePassword);
         const profileActivationToken = setActivationToken();
-        const profileAvatarUrl = "http://www.fillmurray.com/100/150"
+        const profileAvatar = "https://cdn.pixabay.com/photo/2014/04/03/10/21/tree-310207_960_720.png"
         const basePath = `${request.protocol}://${request.get('host')}${request.originalUrl}/activation/${profileActivationToken}`
 
-        const message = `<h2>Welcome to DDCTwitter.</h2>
-<p>In order to start posting tweets of cats you must confirm your account </p>
-<p><a href="${basePath}">${basePath}</a></p>
-`
+        const message = `<h2>Welcome to National Camping Adventure.</h2>
+            <p>In order to save parks to your profile, you must confirm your account </p>
+            <p><a href="${basePath}">${basePath}</a></p>
+            `
 
         const mailgunMessage = {
             from: `Mailgun Sandbox <postmaster@${process.env.MAILGUN_DOMAIN}>`,
             to: profileEmail,
-            subject: "One step closer to Sticky Head -- Account Activation",
+            subject: "Are you ready to activate your account?",
             text: 'Test email text',
             html: message
         }
@@ -37,40 +36,39 @@ export async function signupProfileController(request: Request, response: Respon
             profileId: null,
             profileActivationToken,
             profileAvatar,
-            profileDisplayName
+            profileDisplayName,
             profileEmail,
             profileHash,
-
         };
 
         const result = await insertProfile(profile)
 
-        const emailComposer: MailComposer = new MailComposer(mailgunMessage)
-
-        emailComposer.compile().build((error: any, message: Buffer) => {
-            const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN});
-
-            console.log(message.toString("ascii"))
-            const compiledEmail = {
-                to: profileEmail,
-                message: message.toString("ascii")
-            }
+        // const emailComposer: MailComposer = new MailComposer(mailgunMessage)
+        //
+        // emailComposer.compile().build((error: any, message: Buffer) => {
+        //     const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN});
+        //
+        //     console.log(message.toString("ascii"))
+        //     const compiledEmail = {
+        //         to: profileEmail,
+        //         message: message.toString("ascii")
+        //     }
 
             const status: Status = {
                 status: 200,
-                message: "Profile successfully created please check you",
+                message: "Profile successfully created. Please check your email to activate!",
                 data: null
             };
-            mg.messages().sendMime(compiledEmail, (sendError: any, body: any) => {
-                if (sendError) {
-                    console.log(sendError);
-                    return;
-                }
-                return response.json(status);
-            });
-
-
-        })
+        //     mg.messages().sendMime(compiledEmail, (sendError: any, body: any) => {
+        //         if (sendError) {
+        //             console.log(sendError);
+        //             return;
+        //         }
+        //         return response.json(status);
+        //     });
+        //
+        //
+        // })
 
     } catch (error) {
         const status: Status = {

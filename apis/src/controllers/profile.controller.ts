@@ -43,17 +43,6 @@ export async function getProfileByProfileEmail(request: Request, response: Respo
     }
 }
 
-export async function postProfileController(request: Request, response: Response, nextFunction: NextFunction) {
-    try {
-        const {profileAvatar, profileDisplayName, profileEmail} = request.body
-        const profile: Profile = {profileId: null, profileActivationToken, profileAvatar, profileDisplayName, profileEmail, profileHash}
-        const result = await insertProfile(profile)
-        return response.json({status: 200, data: null, message: result})
-    } catch (error) {
-        console.log(error)
-    }
-}
-
 export async function putProfileController(request: Request, response: Response, nextFunction: NextFunction) {
     try {
         const {profileAvatar, profileDisplayName, profileEmail, profileHash} = request.body

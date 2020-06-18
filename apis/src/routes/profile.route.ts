@@ -4,14 +4,13 @@ import {
     getProfileByProfileId,
     getProfileByProfileEmail,
     getProfileByProfileActivationToken,
-    postProfileController, putProfileController
+    putProfileController
 } from "../controllers/profile.controller";
 
 export const profileRoute = Router()
 
 profileRoute.route('/:profileId')
     .get(getProfileByProfileId)
-    .post(postProfileController)
     .put(putProfileController)
 
 profileRoute.route('/:profileEmail')

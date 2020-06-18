@@ -19,7 +19,7 @@ CREATE TABLE profile (
     profileAvatar VARCHAR(255),
     profileDisplayName VARCHAR(16) NOT NULL,
     profileEmail VARCHAR(128) NOT NULL,
-    profileHash VARCHAR(32) NOT NULL,
+    profileHash VARCHAR(97) NOT NULL,
 
     UNIQUE(profileId),
     UNIQUE(profileActivationToken),
