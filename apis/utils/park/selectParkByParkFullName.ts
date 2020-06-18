@@ -1,13 +1,13 @@
-import {Park} from "../interfaces/park";
+import {park} from "../interfaces/park";
 import {connect} from "../../src/database";
 
-export async function selectParkByParkFullName(ParkFullName : string){
+export async function selectParkByParkFullName(parkFullName : string){
     try {
         const mysqlConnection = await connect();
 
-        const mySqlQuery = 'SELECT HEX(parkId), parkFullName, parkContact, parkDescription, parkState, parkOperatingHours FROM park WHERE parkFullName = (:parkFullName)';
+        const mySqlQuery = 'SELECT BIN_TO_UUID(parkId) AS parkId, parkFullName, parkContact, parkDescription, parkState, parkOperatingHours FROM park WHERE parkFullName = (:parkFullName)';
 
-        const [rows] =  await mysqlConnection.execute(mySqlQuery, {ParkFullName});
+        const [rows] =  await mysqlConnection.execute(mySqlQuery, {parkFullName});
 
         return rows
     } catch (error) {
@@ -15,3 +15,5 @@ export async function selectParkByParkFullName(ParkFullName : string){
         return undefined
     }
 }
+
+selectParkByParkFullName("Fullname")
