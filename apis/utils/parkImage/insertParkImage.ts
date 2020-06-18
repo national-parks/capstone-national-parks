@@ -5,9 +5,10 @@ export async function insertParkImage(parkImage:ParkImage) {
     try {
         const mySqlConnection = await connect()
 
-        const mySqlQuery = "INSERT INTO parkImage(parkImageId, parkImageParkId, parkImageCaption, parkImageUrl) VALUES(UUID_TO_BIN(UUID(:parkImageId)), :parkImageParkId, :parkImageCaption, :parkImageUrl)";
+        const mySqlQuery = "INSERT INTO parkImage(parkImageId, parkImageParkId, parkImageCaption, parkImageUrl) VALUES(UUID_TO_BIN(UUID()), UUID_TO_BIN(:parkImageParkId), :parkImageCaption, :parkImageUrl)";
 
-        const [rows] = await mySqlConnection.execute(mySqlQuery, parkImage)
+        const [rows, misc] = await mySqlConnection.execute(mySqlQuery, parkImage)
+        console.log(misc)
         return "ParkImage created successfully"
     } catch (error) {
         console.log(error)
