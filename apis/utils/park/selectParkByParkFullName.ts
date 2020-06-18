@@ -1,4 +1,4 @@
-import {park} from "../interfaces/park";
+import {Park} from "../interfaces/park";
 import {connect} from "../../src/database";
 
 export async function selectParkByParkFullName(parkFullName : string){

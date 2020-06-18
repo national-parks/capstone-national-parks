@@ -1,4 +1,4 @@
-import {park} from "../interfaces/park";
+import {Park} from "../interfaces/park";
 import {connect} from "../../src/database";
 
 export async function selectParkByParkId(parkId : string){
@@ -15,5 +15,3 @@ export async function selectParkByParkId(parkId : string){
         return undefined
     }
 }
-
-selectParkByParkId("Id");
