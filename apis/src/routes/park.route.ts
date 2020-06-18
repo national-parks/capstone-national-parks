@@ -10,7 +10,7 @@ import {
 
 export const parkRoute = Router()
 
-parkRoute.route('').get(getAllParks)
+parkRoute.route('/').get(getAllParks)
 parkRoute.route('/:parkId')
     .get(getParkByParkId)
 

@@ -5,7 +5,7 @@ export async function selectAllParks(){
     try {
         const mysqlConnection = await connect();
 
-        const mySqlQuery = 'SELECT UUID_TO_BIN(parkId), parkDescription, parkContact, parkFullName, parkState, parkOperatingHours FROM park ';
+        const mySqlQuery = 'SELECT BIN_TO_UUID(parkId), parkDescription, parkContact, parkFullName, parkState, parkOperatingHours FROM park ';
 
         const [rows] =  await mysqlConnection.execute(mySqlQuery, );
 
