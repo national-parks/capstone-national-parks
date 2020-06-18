@@ -6,20 +6,21 @@ export const campgroundValidator = {
         },
         trim: true,
         escape: true
-    }, campgroundSubmitter: {
+    },
+    campgroundSubmitter: {
         isLength: {
             errorMessage: "the name provided for submitter of the campground is to long",
             options: {max:64}
         },
-        trim: true
+        trim: true,
         escape: true
     },
-        campgroundAttribution: {
-            isLength: {
-                errorMessage: "the name provided for the attribution of the campground is to long",
-                options: {max:64}
-            },
-            trim: true
-            escape: true
-        }
+    campgroundAttribution: {
+        isLength: {
+            errorMessage: "the name provided for the attribution of the campground is to long",
+            options: {max:64}
+        },
+        trim: true,
+        escape: true
     }
+}

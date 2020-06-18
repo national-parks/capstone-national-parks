@@ -4,7 +4,6 @@ import {Campground} from "../../utils/interfaces/campground";
 import {selectCampgroundByCampgroundId} from "../../utils/campground/selectCampgroundByCampgroundId"
 
 
-
 export async function getCampgroundByCampgroundId(request: Request, response: Response, nextFunction: NextFunction) {
     try {
         const {campgroundId} = request.params
