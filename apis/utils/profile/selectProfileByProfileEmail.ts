@@ -5,7 +5,7 @@ export async function selectProfileByProfileEmail(profileEmail : string){
     try {
         const mysqlConnection = await connect();
 
-        const mySqlQuery = 'SELECT UNHEX(profileId), profileDisplayName, profileEmail FROM profile WHERE profileEmail = (:profileEmail)';
+        const mySqlQuery = 'SELECT UNHEX(profileId), profileActivationToken, profileAvatar, profileDisplayName, profileEmail, profileHash FROM profile WHERE profileEmail = (:profileEmail)';
 
         const [rows] =  await mysqlConnection.execute(mySqlQuery, {profileEmail});
 
