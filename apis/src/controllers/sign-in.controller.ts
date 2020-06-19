@@ -5,7 +5,7 @@ import passportLocal, { Strategy } from 'passport-local';
 
 import uuid from "uuid";
 import {generateJwt, validatePassword} from "../../utils/auth.utils";
-import {Profile} from "../../utils/interfaces/Profile";
+import {Profile} from "../../utils/interfaces/profile";
 import {selectProfileByProfileEmail} from "../../utils/profile/selectProfileByProfileEmail";
 
 export async function signInController(request: Request, response: Response, nextFunction: NextFunction) {

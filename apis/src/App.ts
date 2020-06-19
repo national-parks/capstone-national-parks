@@ -13,6 +13,7 @@ import passport from "passport";
 import {SignupRouter} from "./routes/sign-up.route";
 import {parkRoute} from "./routes/park.route";
 import {ParkImageRoute} from "./routes/parkImage.route";
+import {SignInRouter} from "./routes/sign-in.route";
 
 
 //import {MemoryStore} from "express-session";
@@ -71,6 +72,7 @@ export class App {
         this.app.use(indexRoutes);
         this.app.use("/campground", campgroundRoute);
         this.app.use("/profile", profileRoute);
+        this.app.use("/sign-in", SignInRouter)
         this.app.use("/sign-up", SignupRouter);
         this.app.use(parkStatusRoutes);
         this.app.use("/apis", indexRoutes);
