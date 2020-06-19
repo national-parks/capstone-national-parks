@@ -51,7 +51,7 @@ CREATE TABLE parkImage (
   parkImageId BINARY(16) NOT NULL,
   parkImageParkId BINARY(16) NOT NULL,
   parkImageCaption VARCHAR(128) NOT NULL,
-  parkImageUrl VARCHAR(64) NOT NULL,
+  parkImageUrl VARCHAR(512) NOT NULL,
 
   UNIQUE(parkImageId),
   PRIMARY KEY(parkImageId),

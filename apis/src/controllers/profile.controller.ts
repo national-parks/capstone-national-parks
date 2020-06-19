@@ -1,11 +1,11 @@
 import {NextFunction, Request, Response} from "express";
-import {Status} from "../../utils/interfaces/status";
 import {Profile} from "../../utils/interfaces/profile";
 import {selectProfileByProfileActivationToken} from "../../utils/profile/selectProfileByProfileActivationToken";
 import {selectProfileByProfileId} from "../../utils/profile/selectProfileByProfileId";
 import {selectProfileByProfileEmail} from "../../utils/profile/selectProfileByProfileEmail";
 import {insertProfile} from "../../utils/profile/insertProfile";
 import {updateProfile} from "../../utils/profile/updateProfile";
+import {Status} from "../../utils/interfaces/status";
 
 export async function getProfileByProfileActivationToken(request: Request, response: Response, nextFunction: NextFunction) {
     try {

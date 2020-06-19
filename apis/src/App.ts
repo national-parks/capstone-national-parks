@@ -11,6 +11,9 @@ import {profileRoute} from "./routes/profile.route";
 import {parkStatusRoutes} from './routes/parkStatus.route'
 import passport from "passport";
 import {SignupRouter} from "./routes/sign-up.route";
+import {parkRoute} from "./routes/park.route";
+import {ParkImageRoute} from "./routes/parkImage.route";
+
 
 //import {MemoryStore} from "express-session";
 // The following class creates the app and instantiates the server
@@ -70,6 +73,9 @@ export class App {
         this.app.use("/profile", profileRoute);
         this.app.use("/sign-up", SignupRouter);
         this.app.use(parkStatusRoutes);
+        this.app.use("/apis", indexRoutes);
+        this.app.use("/apis/park", parkRoute);
+        this.app.use("/ParkImage", ParkImageRoute)
     }
 
 // starts the server and tells the terminal to post a message that the server is running and on what port

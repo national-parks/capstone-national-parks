@@ -1,6 +1,9 @@
 import axios from "axios"
 import {insertPark} from "../park/insertPark";
 import {Park} from  "../interfaces/park";
+import {v1 as uuidv1} from "uuid"
+import {ParkImage} from "../interfaces/parkImage";
+import {insertParkImage} from "../parkImage/insertParkImage";
 
 function dataDownloader() : Promise<any> {
     return main()
@@ -35,9 +38,14 @@ function dataDownloader() : Promise<any> {
                         // })
                     console.log("description length",parkList.description.length)
                         console.log("description",parkList.description)
-                        const park: Park={parkId: null, parkContact: parkList.contacts.phoneNumbers[0].phoneNumber, parkDescription: parkList.description, parkFullName: parkList.fullName, parkState: parkList.states[0], parkOperatingHours: parkList.operatingHours[0].description}
+                        const park: Park={parkId: uuidv1(), parkContact: parkList.contacts.phoneNumbers[0].phoneNumber, parkDescription: parkList.description, parkFullName: parkList.fullName, parkState: parkList.states[0], parkOperatingHours: parkList.operatingHours[0].description}
                         const result = await insertPark(park)
 
+                        for (let parkImage of parkList.images) {
+                            const newParkImage : ParkImage = {parkImageId: null, parkImageParkId: park.parkId as string, parkImageCaption: parkImage.altText, parkImageUrl: parkImage.url}
+                            console.log(newParkImage)
+                            await insertParkImage(newParkImage)
+                        }
                     }
                 }
             }

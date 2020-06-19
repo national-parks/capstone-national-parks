@@ -7,7 +7,7 @@ export const signupValidator = {
             errorMessage: 'Email too long.',
             options: { max: 128}
         },
-        normalizeEmail: true,
+        // normalizeEmail: true,
         trim: true
     },
     profilePassword: {

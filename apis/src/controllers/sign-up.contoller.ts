@@ -43,32 +43,46 @@ export async function signupProfileController(request: Request, response: Respon
 
         const result = await insertProfile(profile)
 
-        // const emailComposer: MailComposer = new MailComposer(mailgunMessage)
-        //
-        // emailComposer.compile().build((error: any, message: Buffer) => {
-        //     const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN});
-        //
-        //     console.log(message.toString("ascii"))
-        //     const compiledEmail = {
-        //         to: profileEmail,
-        //         message: message.toString("ascii")
-        //     }
-
+        if (result) {
             const status: Status = {
                 status: 200,
                 message: "Profile successfully created. Please check your email to activate!",
                 data: null
             };
-        //     mg.messages().sendMime(compiledEmail, (sendError: any, body: any) => {
-        //         if (sendError) {
-        //             console.log(sendError);
-        //             return;
-        //         }
-        //         return response.json(status);
-        //     });
-        //
-        //
-        // })
+
+            // const emailComposer: MailComposer = new MailComposer(mailgunMessage)
+            //
+            // emailComposer.compile().build((error: any, message: Buffer) => {
+            //     const mg = mailgun({apiKey: process.env.MAILGUN_API_KEY, domain: process.env.MAILGUN_DOMAIN});
+            //
+            //     console.log(message.toString("ascii"))
+            //     const compiledEmail = {
+            //         to: profileEmail,
+            //         message: message.toString("ascii")
+            //     }
+
+            //     mg.messages().sendMime(compiledEmail, (sendError: any, body: any) => {
+            //         if (sendError) {
+            //             console.log(sendError);
+            //             return;
+            //         }
+                      return response.json(status);
+            //     });
+            //
+            //
+            // })
+
+        } else {
+            const status: Status = {
+                status: 403,
+                message: "Profile already exists. Do you need to activate your account?",
+                data: null
+            };
+
+            return response.json(status);
+        }
+
+
 
     } catch (error) {
         const status: Status = {
