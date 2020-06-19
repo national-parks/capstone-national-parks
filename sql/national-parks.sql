@@ -19,7 +19,7 @@ CREATE TABLE profile (
     profileAvatar VARCHAR(255),
     profileDisplayName VARCHAR(16) NOT NULL,
     profileEmail VARCHAR(128) NOT NULL,
-    profileHash VARCHAR(32) NOT NULL,
+    profileHash VARCHAR(97) NOT NULL,
 
     UNIQUE(profileId),
     UNIQUE(profileActivationToken),
@@ -30,10 +30,10 @@ CREATE TABLE profile (
 CREATE TABLE park (
     parkId BINARY(16) NOT NULL,
     parkContact VARCHAR(256),
-    parkDescription VARCHAR(256),
+    parkDescription VARCHAR(1024),
     parkFullName VARCHAR(64) NOT NULL,
     parkState CHAR(2),
-    parkOperatingHours VARCHAR(256),
+    parkOperatingHours VARCHAR(1024),
 
     UNIQUE(parkId),
     PRIMARY KEY(parkId)
@@ -51,7 +51,7 @@ CREATE TABLE parkImage (
   parkImageId BINARY(16) NOT NULL,
   parkImageParkId BINARY(16) NOT NULL,
   parkImageCaption VARCHAR(128) NOT NULL,
-  parkImageUrl VARCHAR(64) NOT NULL,
+  parkImageUrl VARCHAR(512) NOT NULL,
 
   UNIQUE(parkImageId),
   PRIMARY KEY(parkImageId),

@@ -1,7 +1,7 @@
 export interface Profile {
-    profileId : string,
-    profileActivationToken : number,
-    profileAvatar : object,
+    profileId : string | null,
+    profileActivationToken : string | null,
+    profileAvatar : string,
     profileDisplayName : string,
     profileEmail : string,
     profileHash : string
