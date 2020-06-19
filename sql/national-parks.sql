@@ -21,7 +21,6 @@ CREATE TABLE profile (
     profileEmail VARCHAR(128) NOT NULL,
     profileHash VARCHAR(97) NOT NULL,
 
-    UNIQUE(profileId),
     UNIQUE(profileActivationToken),
     UNIQUE(profileEmail),
     PRIMARY KEY(profileId)
@@ -35,7 +34,6 @@ CREATE TABLE park (
     parkState CHAR(2),
     parkOperatingHours VARCHAR(1024),
 
-    UNIQUE(parkId),
     PRIMARY KEY(parkId)
 );
 
@@ -43,7 +41,6 @@ CREATE TABLE amenity (
     amenityId BINARY(16) NOT NULL,
     amenityName VARCHAR(32),
 
-    UNIQUE(amenityId),
     PRIMARY KEY(amenityId)
 );
 
@@ -53,7 +50,6 @@ CREATE TABLE parkImage (
   parkImageCaption VARCHAR(128) NOT NULL,
   parkImageUrl VARCHAR(512) NOT NULL,
 
-  UNIQUE(parkImageId),
   PRIMARY KEY(parkImageId),
   FOREIGN KEY(parkImageParkId) REFERENCES park(parkId)
 );
@@ -64,7 +60,6 @@ CREATE TABLE campground (
   campgroundAccessibility BOOLEAN NOT NULL,
   campgroundName VARCHAR(64) NOT NULL,
 
-  UNIQUE(campgroundId),
   PRIMARY KEY(campgroundId),
   FOREIGN KEY(campgroundParkId) REFERENCES park(parkId)
 );
