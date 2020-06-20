@@ -7,5 +7,5 @@ export const ParkImageRoute = Router()
 ParkImageRoute.route("/parkImageParkId/:parkImageParkId")
     .get(getParkImagesByParkImageParkId)
 
-ParkImageRoute.route("/parkImageId/:parkImageId")
+ParkImageRoute.route("/:parkImageId")
     .get(getParkImagesByParkImageId)
