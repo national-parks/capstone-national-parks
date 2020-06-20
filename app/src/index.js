@@ -22,17 +22,16 @@ library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, 
 const Routing = () => (
 	<>
 		<BrowserRouter>
+			<Header />
 			<Switch>
 				<Route exact path="/" component={Home}/>
-				<Route exact path="/Footer" component={Footer}/>
 				<Route exact path="/park-search" component={ParkSearch}/>
 				<Route exact path="/AboutPage" component={AboutPage}/>
-				<Route exact path="/Header" componenet={Header}/>
 				<Route exact path="/ProfilePage" component={ProfilePage}/>
-				<Route exact path="/home" componsent={Home}/>
 				<Route component={FourOhFour}/>
 
 			</Switch>
+			<Footer />
 		</BrowserRouter>
 	</>
 );
