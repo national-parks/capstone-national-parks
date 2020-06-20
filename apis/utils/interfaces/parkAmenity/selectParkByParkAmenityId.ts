@@ -1,7 +1,7 @@
 import {ParkAmenity} from "../parkAmenity"
 import {connect} from "../../src/database";
 
-export async function selectParkByParkAmenity(parkAmenity: string) {
+export async function selectParkByParkAmenityId(parkAmenity: string) {
     try {
         const mysqlConnection = await connect();
 
