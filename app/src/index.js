@@ -13,11 +13,10 @@ import {ProfilePage} from './pages/ProfilePage'
 import 'bootstrap/dist/css/bootstrap.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox} from '@fortawesome/free-solid-svg-icons'
-
+import {FourOhFour} from "./pages/FourOhFour";
 library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox);
 
-import {Header} from "./sharedComponents/Header"
-import {FourOhFour} from "./pages/FourOhFour";
+
 
 
 const Routing = () => (
@@ -30,7 +29,6 @@ const Routing = () => (
 				<Route exact path="/AboutPage" component={AboutPage}/>
 				<Route exact path="/Header" componenet={Header}/>
 				<Route exact path="/ProfilePage" component={ProfilePage}/>
-				<Route exact path="/" component={FourOhFour}/>
 				<Route component={FourOhFour}/>
 
 			</Switch>

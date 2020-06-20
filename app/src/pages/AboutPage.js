@@ -1,7 +1,7 @@
 import React from 'react'
-// import imageA from "./img/saraBeck.png"
-// import imageB from "./img/johnRomero.png"
-// import imageC from "./img/mauricioMadrid.jpg"
+ import imageA from "./img/saraBeck.png"
+ import imageB from "./img/johnRomero.png"
+ import imageC from "./img/mauricioMadrid.jpg"
 import image from '../img/person.png'
 
 export const AboutPage = () => {
