@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter} from "react-router-dom";
 import {Route, Switch} from "react-router";
 
-import {Home} from "./pages/Home";
+import {Home} from "./pages/home/Home";
 import {Footer} from "./sharedComponents/Footer";
 import {AboutPage} from "./pages/AboutPage";
 import {Header} from "./sharedComponents/Header";
@@ -29,6 +29,7 @@ const Routing = () => (
 				<Route exact path="/AboutPage" component={AboutPage}/>
 				<Route exact path="/Header" componenet={Header}/>
 				<Route exact path="/ProfilePage" component={ProfilePage}/>
+				<Route exact path="/home" componsent={Home}/>
 				<Route component={FourOhFour}/>
 
 			</Switch>
