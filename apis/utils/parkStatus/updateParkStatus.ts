@@ -1,7 +1,7 @@
-import {parkStatus} from "../../utils/interfaces/parkStatus";
+import {ParkStatus} from "../../utils/interfaces/parkStatus";
 import {connect} from "../../src/database";
 
-export async function updateParkStatus(parkStatus: parkStatus) {
+export async function updateParkStatus(parkStatus: ParkStatus) {
     try {
         const mySqlConnection = await connect()
         const mySqlQuery = "UPDATE parkStatus SET parkStatusDate = :parkStatusDate, parkStatusParkStatus = :parkStatusParkStatus WHERE parkStatusParkId = UUID_TO_BIN(:parkStatusParkId) AND parkStatusProfileId = UUID_TO_BIN(:parkStatusProfileId)";

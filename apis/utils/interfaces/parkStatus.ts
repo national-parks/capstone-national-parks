@@ -1,6 +1,6 @@
-export interface parkStatus {
+export interface ParkStatus {
     parkStatusProfileId: string,
     parkStatusParkId: string,
-    parkStatusDate: string,
-    parkStatusStatus: string
+    parkStatusDate: string | null,
+    parkStatusParkStatus: string
 }
