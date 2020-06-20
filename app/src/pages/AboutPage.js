@@ -1,7 +1,13 @@
 import React from 'react'
+<<<<<<< HEAD
 import imageA from "./img/saraBeck.png"
 import imageB from "./img/johnRomero.png"
 import imageC from "./img/mauricioMadrid.jpg"
+=======
+ import imageA from "./img/saraBeck.png"
+ import imageB from "./img/johnRomero.png"
+ import imageC from "./img/mauricioMadrid.jpg"
+>>>>>>> 1a8e0b2168de2159726a5745b59b4afdf03246ea
 import image from '../img/person.png'
 
 export const AboutPage = () => {
