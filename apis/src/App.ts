@@ -14,6 +14,7 @@ import {SignupRouter} from "./routes/sign-up.route";
 import {parkRoute} from "./routes/park.route";
 import {ParkImageRoute} from "./routes/parkImage.route";
 import {SignInRouter} from "./routes/sign-in.route";
+import {ParkAmenityRoute} from "./routes/parkAmenity.route";
 
 
 //import {MemoryStore} from "express-session";
@@ -78,6 +79,7 @@ export class App {
         this.app.use("/apis", indexRoutes);
         this.app.use("/apis/park", parkRoute);
         this.app.use("/ParkImage", ParkImageRoute)
+        this.app.use("/Amenity", ParkAmenityRoute)
     }
 
 // starts the server and tells the terminal to post a message that the server is running and on what port

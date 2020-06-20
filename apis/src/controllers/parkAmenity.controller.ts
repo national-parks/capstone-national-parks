@@ -1,6 +1,7 @@
 import {NextFunction, Request, Response} from "express";
 import {selectParkByParkAmenityId} from "../../utils/interfaces/parkAmenity/selectParkByParkAmenityId";
 import {selectParkByParkAmenityAmenityId} from "../../utils/interfaces/parkAmenity/selectParkByParkAmenityAmenityId";
+import {Status} from "../../utils/interfaces/status";
 
 
 export async function getParkByParkAmenityId(request: Request, response: Response, nextFunction: NextFunction) {
