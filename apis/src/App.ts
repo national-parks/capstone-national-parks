@@ -78,8 +78,7 @@ export class App {
         this.app.use("/apis/parkStatus", parkStatusRoutes);
         this.app.use("/apis/park", parkRoute);
         this.app.use("/apis/parkImage", ParkImageRoute)
-        this.app.use("/ParkImage", ParkImageRoute)
-        this.app.use("/Amenity", ParkAmenityRoute)
+        this.app.use("/apis/amenity", ParkAmenityRoute)
     }
 
 // starts the server and tells the terminal to post a message that the server is running and on what port

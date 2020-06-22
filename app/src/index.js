@@ -10,18 +10,22 @@ import {Header} from "./sharedComponents/Header";
 import {ParkSearch} from './pages/ParkSearch/ParkSearch';
 import {ProfilePage} from './pages/ProfilePage'
 import {ParkPage} from './pages/parkPage/parkPage'
+import {FourOhFour} from "./ui/FourOhFour";
 
+import reducer from './store'
 import 'bootstrap/dist/css/bootstrap.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox} from '@fortawesome/free-solid-svg-icons'
-import {FourOhFour} from "./pages/FourOhFour";
+import { configureStore } from '@reduxjs/toolkit'
+import { Provider } from 'react-redux'
 library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox);
+const store = configureStore({reducer})
 
 
 
-
-const Routing = () => (
+const Routing = (store) => (
 	<>
+		<Provider store={store}>
 		<BrowserRouter>
 			<Header />
 			<Switch>
@@ -35,7 +39,8 @@ const Routing = () => (
 			</Switch>
 			<Footer />
 		</BrowserRouter>
+		</Provider>
 	</>
 );
 
-ReactDOM.render(Routing(), document.querySelector('#root'));
+ReactDOM.render(Routing(store), document.querySelector('#root'));
