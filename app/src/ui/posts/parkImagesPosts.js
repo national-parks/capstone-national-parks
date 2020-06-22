@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import * as Yup from "yup"
 
 import { fetchAllParkImages } from '../../store/parkImages'
-import { PostCard } from './PostCard'
+import { PostCard } from './parkImages/parkImagesPostCard'
 import { httpConfig } from '../../utils/http-config'
 import { Formik } from 'formik'
 import Form from 'react-bootstrap/Form'
@@ -16,7 +16,6 @@ import FormControl from 'react-bootstrap/FormControl'
 import InputGroup from 'react-bootstrap/InputGroup'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from 'react-bootstrap/Button'
-import { PostForm } from './PostForm'
 import { fetchParkImages } from '../../store/parkImages'
 
 export const ParkImagesPosts = () => {
