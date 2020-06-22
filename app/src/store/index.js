@@ -1,3 +1,6 @@
-import parks from "parks"
+import {getAllParks} from "parks"
+import {getParkImagesByParkImageParkId} from "./parkImages"
 
-export default combineReducers({parks})
+import { combineReducers } from 'redux'
+
+export default combineReducers({getAllParks, getParkImagesByParkImageParkId})
