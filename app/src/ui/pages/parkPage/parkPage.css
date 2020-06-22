@@ -1,15 +1,9 @@
-.backgroundForest {
-	background-color: #244F26;
-	border-radius: 15px;
-	color: white;
+.amenitiesBackground {
+	color: black;
 }
 
-#search {
-	width: 100%;
-}
-
-h4 {
-	padding-bottom: 4px;
+.border-bottom {
+	padding: 0 0 3px 0;
 }
 
 /* ------------- Fancy Checkboxes for Filter by Amenities - Changes color on click and changes checkboxes to fontawesome ------------- */

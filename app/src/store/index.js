@@ -1,4 +1,5 @@
 import {combineReducers} from 'redux'
-import park from "./parks"
+import parks from "./parks"
+
 
 export default combineReducers({parks})

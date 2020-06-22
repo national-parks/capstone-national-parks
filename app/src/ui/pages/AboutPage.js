@@ -1,5 +1,5 @@
 import React from 'react'
-import image from '../img/person.png'
+import image from '../../img/person.png'
 
 export const AboutPage = () => {
   return (
@@ -20,7 +20,7 @@ export const AboutPage = () => {
           We are Groot.</p>
       </div>
       <div className="container m-5">
-        <h5>Meet Sara</h5>
+        <h5>Meet Sarah</h5>
         <div className="card mb-3">
           <div className="row no-gutters">
             <div className="col-md-4">
