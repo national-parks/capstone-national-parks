@@ -9,6 +9,7 @@ import {AboutPage} from "./pages/AboutPage";
 import {Header} from "./sharedComponents/Header";
 import {ParkSearch} from './pages/ParkSearch/ParkSearch';
 import {ProfilePage} from './pages/ProfilePage'
+import {ParkPage} from './pages/parkPage/parkPage'
 
 import 'bootstrap/dist/css/bootstrap.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -28,6 +29,7 @@ const Routing = () => (
 				<Route exact path="/park-search" component={ParkSearch}/>
 				<Route exact path="/AboutPage" component={AboutPage}/>
 				<Route exact path="/ProfilePage" component={ProfilePage}/>
+				<Route exact path="/ParkPage" component={ParkPage}/>
 				<Route component={FourOhFour}/>
 
 			</Switch>
