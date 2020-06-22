@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import * as Yup from "yup"
 
 import { fetchAllParks} from '../../../store/parks'
-import { PostCard } from './PostCard'
+import { PostCard } from './parksPostCard'
 import { httpConfig } from '../../utils/http-config'
 import { Formik } from 'formik'
 import Form from 'react-bootstrap/Form'
@@ -16,7 +16,6 @@ import FormControl from 'react-bootstrap/FormControl'
 import InputGroup from 'react-bootstrap/InputGroup'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from 'react-bootstrap/Button'
-import { PostForm } from './PostForm'
 
 export const ParksPosts = () => {
   const dispatch = useDispatch()
@@ -50,7 +49,7 @@ export const ParksPosts = () => {
             </Card>
             <CardColumns className="p-4">
               {
-                parks.map(parks => <PostCard parks={parks} key={parks.parkId} />)
+                parks.map(parks => <parksPostCard parks={parks} key={parks.parkId} />)
               }
             </CardColumns>
           </Row>
