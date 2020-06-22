@@ -9,7 +9,6 @@ import * as Yup from "yup"
 
 import { fetchAllParks} from '../../../store/parks'
 import { PostCard } from './parksPostCard'
-import { httpConfig } from '../../utils/http-config'
 import { Formik } from 'formik'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
@@ -24,6 +23,7 @@ export const ParksPosts = () => {
     console.log("Redux Store", store)
     return store.parks ? store.parks : []
   })
+  console.log(parks)
 
   const sideEffects = () => {
     dispatch(fetchAllParks())
@@ -44,12 +44,11 @@ export const ParksPosts = () => {
 
             <Card bg="shadow-light" className="border-0 rounded-6 w-50">
               <Card.Body>
-                <PostForm />
               </Card.Body>
             </Card>
             <CardColumns className="p-4">
               {
-                parks.map(parks => <parksPostCard parks={parks} key={parks.parkId} />)
+                parks.map(park => <PostCard park={park} key={parks.parkId} />)
               }
             </CardColumns>
           </Row>
