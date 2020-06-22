@@ -1,5 +1,5 @@
 import React from "react"
-import Image from "../img/parkPlaceHolder.png"
+import Image from "../../img/parkPlaceHolder.png"
 
 export const ProfilePage = () => {
   return (

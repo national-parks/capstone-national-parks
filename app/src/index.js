@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter} from "react-router-dom";
 import {Route, Switch} from "react-router";
 
-import {Home} from "./pages/home/Home";
+import {Home} from "./ui/pages/home/Home";
 import {Footer} from "./sharedComponents/Footer";
-import {AboutPage} from "./pages/AboutPage";
+import {AboutPage} from "./ui/pages/AboutPage";
 import {Header} from "./sharedComponents/Header";
-import {ParkSearch} from './pages/ParkSearch/ParkSearch';
-import {ProfilePage} from './pages/ProfilePage'
-import {ParkPage} from './pages/parkPage/parkPage'
-import {FourOhFour} from "./ui/FourOhFour";
+import {ParkSearch} from './ui/pages/ParkSearch/ParkSearch';
+import {ProfilePage} from './ui/pages/ProfilePage'
+import {ParkPage} from './ui/pages/parkPage/parkPage'
+import {FourOhFour} from "./ui/pages/FourOhFour";
 
 import reducer from './store'
 import 'bootstrap/dist/css/bootstrap.css';
