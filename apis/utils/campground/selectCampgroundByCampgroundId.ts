@@ -5,7 +5,7 @@ export async function selectCampgroundByCampgroundId(campgroundId : string){
     try {
         const mysqlConnection = await connect();
 
-        const mySqlQuery = 'SELECT UNHEX(campgroundId), campgroundParkId, campgroundAccessibility, campgroundName FROM campground WHERE campgroundId = (:campgroundId)';
+        const mySqlQuery = 'SELECT BIN_TO_UUID(campgroundId) AS campgroundId, BIN_TO_UUID(campgroundParkId) AS campgroundParkId, campgroundAccessibility, campgroundName FROM campground WHERE campgroundId = (:campgroundId)';
 
         const [rows] =  await mysqlConnection.execute(mySqlQuery, {campgroundId});
 
