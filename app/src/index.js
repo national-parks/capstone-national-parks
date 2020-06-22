@@ -16,7 +16,9 @@ import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPo
 import {FourOhFour} from "./ui/FourOhFour";
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
+
 library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox);
+
 const store = configureStore({reducer})
 
 
