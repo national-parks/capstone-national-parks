@@ -4,6 +4,7 @@ import {ParkImage} from "../../utils/interfaces/parkImage";
 import {selectParkImageByParkImageParkId} from "../../utils/parkImage/selectParkImageByParkImageParkId";
 import {selectParkImageByParkImageId} from "../../utils/parkImage/selectParkImageByParkImageId";
 import {insertParkImage} from "../../utils/parkImage/insertParkImage";
+import {selectAllParkImages} from "../../utils/parkImage/selectAllParkImages";
 
 
 export async function getParkImagesByParkImageParkId(request: Request, response: Response, nextFunction: NextFunction) {
@@ -21,6 +22,15 @@ export async function getParkImagesByParkImageId(request: Request, response: Res
     try {
         const {parkImageId} = request.params
         const result = await selectParkImageByParkImageId(parkImageId)
+        return response.json({status: 200, data: result, message: null})
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export async function getAllParkImages(request: Request, response: Response, nextFunction: NextFunction) {
+    try {
+        const result = await selectAllParkImages()
         return response.json({status: 200, data: result, message: null})
     } catch (error) {
         console.log(error)

@@ -5,6 +5,7 @@ import './ParkSearch.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { ParkCard } from './ParkCard'
 import { fetchAllParks } from '../../../store/parks'
+import { fetchAllParkImages } from '../../../store/parkImages'
 
 export const ParkSearch = () => {
 	const dispatch = useDispatch()
@@ -12,6 +13,7 @@ export const ParkSearch = () => {
 
 	const sideEffects = () => {
 		dispatch(fetchAllParks())
+		dispatch(fetchAllParkImages())
 	}
 	React.useEffect(sideEffects,[])
 	return (
