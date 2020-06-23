@@ -6,7 +6,7 @@ import {Route, Switch} from "react-router";
 import {Home} from "./ui/pages/Home";
 import {Footer} from "./ui/sharedComponents/Footer";
 import {AboutPage} from "./ui/pages/AboutPage";
-import {Header} from "./ui/sharedComponents/Header";
+import {Header} from "./ui/sharedComponents/header/Header";
 import {ParkSearch} from './ui/pages/ParkSearch/ParkSearch';
 import {ProfilePage} from './ui/pages/ProfilePage'
 import {ParkPage} from './ui/pages/parkPage/parkPage'
