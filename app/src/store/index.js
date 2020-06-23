@@ -1,7 +1,7 @@
-import {getAllParks} from "parks"
-import {getParkImagesByParkImageParkId} from "./parkImages"
-import {getCampgroundByCampgroundParkId} from "./campground"
+import parks from "./parks"
+import parkImages from "./parkImages"
+import campgrounds from "./campground"
 
 import { combineReducers } from 'redux'
 
-export default combineReducers({getAllParks, getParkImagesByParkImageParkId, getCampgroundByCampgroundParkId})
+export default combineReducers({parks, parkImages, campgrounds})
