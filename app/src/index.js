@@ -35,10 +35,9 @@ const Routing = (store) => (
 			<Switch>
 				<Route exact path="/" component={Home}/>
 				<Route exact path="/park-search" component={ParkSearch}/>
-				<Route exact path="/parkPosts" component={ParksPosts}/>
 				<Route exact path="/AboutPage" component={AboutPage}/>
 				<Route exact path="/ProfilePage" component={ProfilePage}/>
-				<Route exact path="/ParkPage" component={ParkPage}/>
+				<Route exact path="/parkPage/:parkId" component={ParkPage} parkId=":parkId"/>
 				<Route component={FourOhFour}/>
 
 			</Switch>

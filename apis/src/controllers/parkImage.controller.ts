@@ -26,15 +26,3 @@ export async function getParkImagesByParkImageId(request: Request, response: Res
         console.log(error)
     }
 }
-
-
-export async function postParkImageId(request: Request, response: Response, nextFunction: NextFunction) {
-    try {
-        const {parkImageId, parkImageParkId, parkImageCaption, parkImageUrl} = request.body
-        const ParkImage: ParkImage = {parkImageId: null, parkImageParkId, parkImageCaption, parkImageUrl}
-        const result = await insertParkImage(ParkImage)
-        return response.json({status: 200, data: null, message: result})
-    } catch (error) {
-        console.log(error)
-    }
-}

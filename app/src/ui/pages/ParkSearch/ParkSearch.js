@@ -4,14 +4,16 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './ParkSearch.css'
 import { useDispatch, useSelector } from 'react-redux'
 import { ParkCard } from './ParkCard'
+import { fetchAllParks } from '../../../store/parks'
 
 export const ParkSearch = () => {
 	const dispatch = useDispatch()
 	const parks = useSelector(state => state.parks ? state.parks : [])
 
-	// const sideEffects = () => {
-	// 	dispatch
-	// }
+	const sideEffects = () => {
+		dispatch(fetchAllParks())
+	}
+	React.useEffect(sideEffects,[])
 	return (
 		<>
 		<div className="container-fluid">
@@ -213,7 +215,8 @@ export const ParkSearch = () => {
 			{/* ---------------------Park Output-------------------- */}
 			<div className="row my-3">
 
-<ParkCard />
+
+				{parks.map(park => <ParkCard park = {park}/>)}
 		</div>
 
 		{/* Pagination for navigating */}
