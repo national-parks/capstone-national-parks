@@ -30,6 +30,7 @@ CREATE TABLE park (
     parkId BINARY(16) NOT NULL,
     parkContact VARCHAR(256),
     parkDescription VARCHAR(1024),
+    parkParkCode CHAR(4) NOT NULL,
     parkFullName VARCHAR(64) NOT NULL,
     parkState CHAR(2),
     parkOperatingHours VARCHAR(1024),
@@ -58,9 +59,11 @@ CREATE TABLE campground (
   campgroundId BINARY(16) NOT NULL,
   campgroundParkId BINARY(16) NOT NULL,
   campgroundAccessibility BOOLEAN NOT NULL,
+  camogroundParkCode CHAR(4) NOT NULL,
   campgroundName VARCHAR(64) NOT NULL,
 
   PRIMARY KEY(campgroundId),
+  FOREIGN KEY(campgroundParkCode) REFERENCES park(parkParkCode),
   FOREIGN KEY(campgroundParkId) REFERENCES park(parkId)
 );
 
