@@ -14,7 +14,7 @@ export function ParkCard (props) {
   console.log(parkImage)
   return(<>
     <div className="col-4 bg-light py-3">
-      {parkImage && <img src={parkImage.parkImageUrl}
+      {parkImage && <img src={`${parkImage.parkImageUrl}?width=300`}
            alt={parkImage.parkImageCaption} className="img-fluid" />}
     </div>
     <div className="col-8 bg-light py-3">
