@@ -26,7 +26,7 @@ function dataDownloader(): Promise<any> {
             for (let j = 1; j < 497; j = j + 50) {
                 const {data} = await axios.get(`https://developer.nps.gov/api/v1/parks?stateCode=&start=${j}&api_key=${process.env.NPS_API_KEY}`);
                 for (let i = 0; i < data.data.length; i++) {
-                    if (data.data[i].designation.trim() === 'National Park' || data.data[i].designation.trim() === 'National Monument & Preserve') {
+                    if (data.data[i].designation.trim() === 'National Park' || data.data[i].designation.trim() === 'National Park & Preserve') {
                         let parkList = data.data[i];
                         // parkData.push({
                         //     "contacts": park.contacts,
