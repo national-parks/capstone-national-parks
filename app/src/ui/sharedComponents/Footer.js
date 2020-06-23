@@ -3,7 +3,7 @@ import React from "react"
 export const Footer = () => {
   return (
     <>
-      <footer className="fixed-bottom" id="footer">
+      <footer className="bottom" id="footer">
         <div className="footer">
           <nav className="navbar navbar-expand-lg bg-dark">
             <a className="navbar-brand" href="#">Donate to National Parks</a>

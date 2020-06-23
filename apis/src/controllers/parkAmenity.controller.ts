@@ -19,7 +19,7 @@ export async function getParkByParkAmenityId(request: Request, response: Respons
 export async function getParkByParkAmenityAmenityId(request: Request, response: Response, nextFunction: NextFunction) {
     try {
         const {parkAmenityId} = request.params;
-        const data = await selectParkByParkAmenityAmenityId(parkAmenityAmenityId);
+        const data = await selectParkByParkAmenityAmenityId(parkAmenityId);
         const status: Status = {status: 200, data, message: null}
         return response.json(status)
     } catch (error) {
