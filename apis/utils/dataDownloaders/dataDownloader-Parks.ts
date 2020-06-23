@@ -26,7 +26,7 @@ function dataDownloader(): Promise<any> {
             for (let j = 1; j < 497; j = j + 50) {
                 const {data} = await axios.get(`https://developer.nps.gov/api/v1/parks?stateCode=&start=${j}&api_key=${process.env.NPS_API_KEY}`);
                 for (let i = 0; i < data.data.length; i++) {
-                    if (data.data[i].designation === 'National Park') {
+                    if (data.data[i].designation.trim() === 'National Park' || data.data[i].designation.trim() === 'National Monument & Preserve') {
                         let parkList = data.data[i];
                         // parkData.push({
                         //     "contacts": park.contacts,
@@ -38,14 +38,15 @@ function dataDownloader(): Promise<any> {
                         //     "parkCode": park.parkCode,
                         //     "fullName": park.fullName
                         // })
-                        console.log("description length", parkList.description.length)
-                        console.log("description", parkList.description)
+                        // console.log("description length", parkList.description.length)
+                        // console.log("description", parkList.description)
+                        console.log("STATES", parkList.states)
                         const park: Park = {
                             parkId: uuidv1(),
                             parkContact: parkList.contacts.phoneNumbers[0].phoneNumber,
                             parkDescription: parkList.description,
                             parkFullName: parkList.fullName,
-                            parkState: parkList.states[0],
+                            parkState: parkList.states.substring(0,2),
                             parkOperatingHours: parkList.operatingHours[0].description
                         }
                         parkData.push(park)
@@ -56,17 +57,17 @@ function dataDownloader(): Promise<any> {
                                 parkImageCaption: parkImage.altText,
                                 parkImageUrl: parkImage.url
                             }
-                            console.log(newParkImage)
-                            parkImageData.push(parkImage)
+                            // console.log(newParkImage)
+                            parkImageData.push(newParkImage)
 
                         }
                     }
                 }
             }
             const result = await insertPark(parkData)
-            console.log(result)
+            // console.log("WE ARE HERE", result)
             const result2 = await insertParkImage(parkImageData)
-            console.log(result2)
+            console.log("NO FRICKEN WAY", result2)
 
         } catch (error) {
             console.error("main data download error",error.message)
