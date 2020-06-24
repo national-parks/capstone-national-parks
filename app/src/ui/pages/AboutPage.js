@@ -24,11 +24,11 @@ export const AboutPage = () => {
         <div className="card mb-3">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src={image} className="card-img" alt="Temp pic of Sara" />
+              <img src={image} className="card-img" alt="Picture of Sara Beck" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
-                <h5 className="card-title">Card title</h5>
+                <h5 className="card-title">Hello, I'm Sara Beck</h5>
                 <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
                   additional content. This content is a little bit longer.</p>
                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
@@ -42,7 +42,7 @@ export const AboutPage = () => {
         <div className="card mb-3">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src={image} className="card-img" alt="Temp pic of John" />
+              <img src={image} className="card-img" alt="Picture of John Romero" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -60,7 +60,7 @@ export const AboutPage = () => {
         <div className="card mb-3">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src={image} className="card-img" alt="temp pic of Mauricio" />
+              <img src={image} className="card-img" alt="Picture of Mauricio Madrid" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
