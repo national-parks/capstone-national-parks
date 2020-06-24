@@ -2,7 +2,6 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 
 export function ParkDetail (props) {
-	console.log(props)
 	const {park}=props
 	const parkImage=useSelector(state => {
 		return state.parkImages

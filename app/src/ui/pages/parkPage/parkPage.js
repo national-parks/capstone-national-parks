@@ -3,34 +3,15 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./parkPage.css"
 import { useDispatch, useSelector } from 'react-redux'
-import { fetchParkByParkId, fetchAllParks } from '../../../store/parks'
 import { ParkDetail } from '../parkPage/parkDetail'
+import { ParkContact } from '../parkPage/parkContact'
 
 
 export const ParkPage = ({match}) => {
 
-	// Returns the the userPosts store from redux and assigns it to the userPosts variable.
-	const dispatch = useDispatch();
-
-	const sideEffects = () => {
-		// The dispatch function takes actions as arguments to make changes to the store/redux.
-		dispatch(fetchParkByParkId(match.params.parkId));
-		dispatch(fetchAllParks(match.params.props));
-	};
-
-	// Declare any inputs that will be used by functions that are declared in sideEffects.
-	const sideEffectInputs = [match.params.parkId];
-
-	/**
-	 * Pass both sideEffects and sideEffectInputs to useEffect.
-	 * useEffect is what handles rerendering of components when sideEffects resolve.
-	 * E.g when a network request to an api has completed and there is new data to display on the dom.
-	 **/
-	useEffect(sideEffects, sideEffectInputs);
-
 	const park = useSelector(state => (
-		state.park
-			? state.park.find(parks => parks.params.props === match.parkId)
+		state.parks
+			? state.parks.find(park => park.parkId === match.params.parkId)
 			: []
 	));
 
@@ -199,14 +180,10 @@ export const ParkPage = ({match}) => {
 				{/* -------------------- Park Contact/Info Section -------------------- */}
 				<div className="container-fluid amenitiesBackground mt-4">
 					<div className="row mt-4 p-2">
-						<div className="col"><h4 className="border-bottom">Park Contact and Information</h4></div>
+						<div className="col"><h4 className="border-bottom">Park Hours Information</h4></div>
 					</div>
 
-					<div className="row pt-2 px-5 pb-5">
-						<div className="col">
-							Park contact and information blah
-						</div>
-					</div>
+					{park && (<ParkContact park = {park}/>)}
 				</div>
 				{/* -------------------- End Park Contact/Info Section -------------------- */}
 
