@@ -29,8 +29,10 @@ export const AboutPage = () => {
             <div className="col-md-8">
               <div className="card-body">
                 <h5 className="card-title">Hello, I'm Sara Beck</h5>
-                <p className="card-text">This is a wider card with supporting text below as a natural lead-in to
-                  additional content. This content is a little bit longer.</p>
+                <p className="card-text">Sarah is a fullstack Javascript developer.</p>
+                <p>She has a passion for learning and adding to her skill sets, as well as helping those in need.</p>
+              <p>Her large variety of job experience allows her to bring a new perspective to her teams. She also has a tenacious attitude, sticking to things to completion to make sure her team succeeds.</p>
+              <p>Has experience with taxes, education, customer service, and tech such as Wordpress and basic Python allows her to help her team.</p>
                 <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
               </div>
             </div>
