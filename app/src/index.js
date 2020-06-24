@@ -5,6 +5,7 @@ import {Route, Switch} from "react-router";
 
 import {Home} from "./ui/home/Home";
 import {Footer} from "./ui/sharedComponents/Footer";
+
 import {AboutPage} from "./ui/pages/AboutPage";
 import {Header} from "./ui/sharedComponents/Header";
 import {ParkSearch} from './ui/pages/ParkSearch/ParkSearch';
