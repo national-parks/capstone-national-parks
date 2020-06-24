@@ -1,47 +1,44 @@
-import React from "react"
+import React, { useEffect } from "react"
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import 'bootstrap/dist/css/bootstrap.css'
 import "./parkPage.css"
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchParkByParkId, fetchAllParks } from '../../../store/parks'
+import { ParkDetail } from '../parkPage/parkDetail'
 
 
-export const ParkPage = () => {
+export const ParkPage = ({match}) => {
+
+	// Returns the the userPosts store from redux and assigns it to the userPosts variable.
+	const dispatch = useDispatch();
+
+	const sideEffects = () => {
+		// The dispatch function takes actions as arguments to make changes to the store/redux.
+		dispatch(fetchParkByParkId(match.params.parkId));
+		dispatch(fetchAllParks(match.params.props));
+	};
+
+	// Declare any inputs that will be used by functions that are declared in sideEffects.
+	const sideEffectInputs = [match.params.parkId];
+
+	/**
+	 * Pass both sideEffects and sideEffectInputs to useEffect.
+	 * useEffect is what handles rerendering of components when sideEffects resolve.
+	 * E.g when a network request to an api has completed and there is new data to display on the dom.
+	 **/
+	useEffect(sideEffects, sideEffectInputs);
+
+	const park = useSelector(state => (
+		state.park
+			? state.park.find(parks => parks.params.props === match.parkId)
+			: []
+	));
+
 	return (
 		<>
 			<section>
 
-				<div className="container-fluid mt-5">
-					<div className="row">
-						<div className="col h1">Park Name</div>
-						<div className="col text-right">
-							<button className="btn btn-primary p-2 mx-2">Favorite</button>
-							<button className="btn btn-primary p-2 mx-2">Wish List</button>
-							<button className="btn btn-primary p-2 mx-2">Visited</button>
-						</div>
-					</div>
-				</div>
-
-
-				<div className="container-fluid">
-					<div className="row">
-						<div className="col">
-							<img className="img-fluid" src="https://i.ytimg.com/vi/BHACKCNDMW8/maxresdefault.jpg" alt="Placeholder" />
-						</div>
-
-						<div className="col">
-							Park Description goes here. The only thing I found in the fridge was a dead dove in a bag. And I wouldn't
-							just lie there, if that's what you're thinking. That's not what I WAS thinking. The Army had half a day.
-							I just haven't had sex in a month. You know, you've been here two months. It's hard to gauge time. Gosh Mom…
-							after all these years, God's not going to take a call from you. And here you are coming out of your mother's
-							third base! Dad asked me to do this on the day he pleads not guilty, as a spectacular protest. A…. ? A group
-							of British builders operating outside the O.C.
-							<br /> <br />
-							It's as Ann as the nose on plain's face. For there's a man inside me, and only when he's finally out, can I
-							walk free of pain. Stop licking my hand, you horse's ass! You must teach me the ways of the secular flesh.
-							You just made a fool out of yourself in front of T-Bone.
-						</div>
-
-					</div>
-				</div>
+				{park && (<ParkDetail park = {park}/>)}
 
 				{/* -------------------- Amenities Section -------------------- */}
 				<div className="container-fluid amenitiesBackground">
