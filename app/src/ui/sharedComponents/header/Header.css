@@ -1,5 +1,5 @@
 /*************
-Nar Bar content
+Nav Bar content
  */
 header {
     background-image: url("nationalparks.jpg");
@@ -22,8 +22,7 @@ header {
 }
 .btn-primary {
     color: #fff;
-    background-color: lightgrey;
-    border-color: #007bff;
+    padding: 5px!important;
 }
 /***************
 * Nav Bar Links
