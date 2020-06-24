@@ -6,7 +6,7 @@ export const Footer = () => {
       <footer className="bottom" id="footer">
         <div className="footer">
           <nav className="navbar navbar-expand-lg bg-dark">
-            <a className="navbar-brand" href="#">Donate to National Parks</a>
+            <a className="navbar-brand" href="https://www.nps.gov/getinvolved/index.htm">Get Involved with National Parks</a>
             <div className="collapse navbar-collapse" id="navbarText">
               <ul className="navbar-nav mr-auto">
                 <li className="nav-item active">
