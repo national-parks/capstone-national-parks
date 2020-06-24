@@ -11,7 +11,7 @@ export const signInValidator = {
         isEmail: {
             errorMessage: 'Please provide a valid email'
         },
-        normalizeEmail: true,
+        // normalizeEmail: true,
         trim: true
     }
 }

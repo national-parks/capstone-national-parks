@@ -6,6 +6,9 @@ import { NavDropdown } from 'react-bootstrap'
 import { Form } from 'react-bootstrap'
 import { FormControl } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
+import {SignUpModal} from './sign-up/signUpModal'
+import {SignInModal} from './sign-in/signInModal'
+
 export const Header = () => {
 
 	return (<>
@@ -22,10 +25,9 @@ export const Header = () => {
 						<NavDropdown.Item href="#action/3.3">Search</NavDropdown.Item>
 					</NavDropdown>
 				<Nav.Link href="#home">About Us</Nav.Link>
+				<SignUpModal/>
+				<SignInModal/>
 			</Nav>
-			<Button inline>
-				<Button variant="outline-dark">Login</Button>
-			</Button>
 		</Navbar.Collapse>
 	</Navbar>
 </header>
