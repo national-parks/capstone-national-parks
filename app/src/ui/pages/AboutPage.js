@@ -6,18 +6,13 @@ export const AboutPage = () => {
     <>
       <div className="container m-5">
         <h3>Our Goals</h3>
-        <p>I am Groot. I am Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot.
-          I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot.
-          We are Groot. We are Groot. We are Groot. We are Groot. I am Groot. I am Groot. We are Groot. I am Groot.
-          We are Groot.</p>
-        <p>We are Groot. I am Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot.
-          We are Groot. We are Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot. I am Groot.
-          I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. We are Groot. We are Groot. I am Groot.
-          We are Groot.</p>
-        <p>We are Groot. We are Groot. I am Groot. I am Groot. I am Groot. I am Groot. I am Groot. We are Groot.
-          We are Groot. I am Groot. We are Groot. We are Groot. I am Groot. We are Groot. I am Groot. We are Groot.
-          I am Groot. We are Groot. We are Groot. I am Groot. I am Groot. We are Groot. I am Groot. We are Groot.
-          We are Groot.</p>
+        <p>We created this site to be a source of information about the National Parks of the United States.  The user will find a list of the national parks with an image and description.
+        </p>
+        <p>We intended it to be personal to the user which is why we included an option to create an account and track your favorite parks, visited parks, and want to visit parks.
+        </p>
+        <p>We strive to make this site as informative and user friendly as possible.  We will continue to update and maintain the website often.
+        </p>
+        <p>Have a great day and enjoy the great outdoors!</p>
       </div>
       <div className="container m-5">
         <h5>Meet Sarah</h5>
