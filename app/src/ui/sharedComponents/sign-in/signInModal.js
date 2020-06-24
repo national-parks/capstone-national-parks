@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Button} from "react-bootstrap";
 import {Modal} from "react-bootstrap";
-import {SignInForm} from "./SignInForm";
+import {SignInForm} from "./signInForm";
 
 
 export const SignInModal = () => {

@@ -28,18 +28,6 @@ function dataDownloader(): Promise<any> {
                 for (let i = 0; i < data.data.length; i++) {
                     if (data.data[i].designation.trim() === 'National Park' || data.data[i].designation.trim() === 'National Park & Preserve') {
                         let parkList = data.data[i];
-                        // parkData.push({
-                        //     "contacts": park.contacts,
-                        //     "states": park.states,
-                        //     "activities": park.activities,
-                        //     "description": park.description,
-                        //     "images": park.images,
-                        //     "designation": park.designation,
-                        //     "parkCode": park.parkCode,
-                        //     "fullName": park.fullName
-                        // })
-                        // console.log("description length", parkList.description.length)
-                        // console.log("description", parkList.description)
                         console.log("STATES", parkList.states)
                         const park: Park = {
                             parkId: uuidv1(),
