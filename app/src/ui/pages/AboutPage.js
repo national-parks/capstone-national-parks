@@ -1,6 +1,7 @@
 import React from 'react'
-import image from '../../img/person.png'
 import image1 from '../../../src/img/mauricioMadrid.jpg'
+import image2 from '../../../src/img/johnRomero.jpg'
+import image3 from '../../../src/img/saraBeck.jpg'
 
 export const AboutPage = () => {
   return (
@@ -20,7 +21,7 @@ export const AboutPage = () => {
         <div className="card mb-3">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src={image} className="card-img" alt="Picture of Sara Beck" />
+              <img src={image3} className="card-img" alt="Picture of Sara Beck" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
@@ -40,7 +41,7 @@ export const AboutPage = () => {
         <div className="card mb-3">
           <div className="row no-gutters">
             <div className="col-md-4">
-              <img src={image} className="card-img" alt="Picture of John Romero" />
+              <img src={image2} className="card-img" alt="Picture of John Romero" />
             </div>
             <div className="col-md-8">
               <div className="card-body">
