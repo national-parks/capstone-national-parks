@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom';
 import {BrowserRouter} from "react-router-dom";
 import {Route, Switch} from "react-router";
 
-import {Home} from "./pages/home/Home";
-import {Footer} from "./sharedComponents/Footer";
-import {AboutPage} from "./pages/AboutPage";
-import {Header} from "./sharedComponents/Header";
-import {ParkSearch} from './pages/ParkSearch/ParkSearch';
-import {ProfilePage} from './pages/ProfilePage'
+import {Home} from "./ui/home/Home";
+import {Footer} from "./ui/sharedComponents/Footer";
+import {AboutPage} from "./ui/AboutPage";
+import {Header} from "./ui/sharedComponents/Header";
+import {ParkSearch} from './ui/ParkSearch/ParkSearch';
+import {ProfilePage} from './ui/ProfilePage'
 import {ParkPage} from './pages/parkPage/parkPage'
 import {FourOhFour} from "./ui/FourOhFour";
 
