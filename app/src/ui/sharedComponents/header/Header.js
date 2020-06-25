@@ -3,6 +3,9 @@ import "./Header.css"
 import { Navbar } from 'react-bootstrap'
 import { Nav } from 'react-bootstrap'
 import { Button } from 'react-bootstrap'
+import { SignUpModal } from '../sign-up/signUpModal'
+import { SignInModal } from '../sign-in/signInModal'
+
 export const Header = () => {
 
 	return (<>
@@ -14,10 +17,9 @@ export const Header = () => {
 			<Nav className="ml-auto">
 				<Nav.Link className="px-2" href="#home">Search For Parks</Nav.Link>
 				<Nav.Link className="px-2" href="#home">About Us</Nav.Link>
+				<SignUpModal/>
+				<SignInModal/>
 			</Nav>
-			<Button inline>
-				<Button>Login</Button>
-			</Button>
 		</Navbar.Collapse>
 	</Navbar>
 </header>
