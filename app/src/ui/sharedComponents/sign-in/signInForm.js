@@ -1,8 +1,8 @@
 import React from 'react';
-import {httpConfig} from "../../../utils/http-config";
+import {httpConfig} from "../../../lib/http-config";
 import {Formik} from "formik/dist/index";
 import * as Yup from "yup";
-import {SignInFormContent} from "./SignInFormContent";
+import {SignInFormContent} from "./signInFormContent";
 
 
 

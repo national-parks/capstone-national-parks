@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {Button} from "react-bootstrap";
 import {Modal} from "react-bootstrap";
-import {SignUpForm} from "./SignUpForm";
+import {SignUpForm} from "./signUpForm";
 
 
 export const SignUpModal = () => {
@@ -21,7 +21,7 @@ export const SignUpModal = () => {
 					<Modal.Title>Sign Up</Modal.Title>
 				</Modal.Header>
 				<Modal.Body>
-					<SignUpForm/>
+					<SignUpForm handleClose={handleClose}/>
 				</Modal.Body>
 				<Modal.Footer>
 					<Button variant="secondary" onClick={handleClose}>

@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
-import {httpConfig} from "../../../utils/http-config";
+import {httpConfig} from "../../../lib/http-config";
 import * as Yup from "yup";
 import {Formik} from "formik";
 
 import {SignUpFormContent} from "./SignUpFormContent";
 
-export const SignUpForm = () => {
+export const SignUpForm = (props) => {
+
 	const signUp = {
 		profileEmail: "",
 		profileDisplayName: "",
@@ -36,6 +37,8 @@ export const SignUpForm = () => {
 
 					if(reply.status === 200) {
 						resetForm();
+						props.handleClose();
+						alert(message);
 					}
 					setStatus({message, type});
 				}
