@@ -5,16 +5,19 @@ const slice = createSlice({
   name: "parkImages",
   initialState: [],
   reducers:  {
-    getParkImagesByParkImageParkId : (parkImages, action) => {
-      parkImages.push(action.payload)
+    getParkImagesByParkImageParkId : (parkImage, action) => {
+      parkImage.push(action.payload)
     },
     getAllParkImages:(parkImages,action) => {
+      return action.payload
+    },
+    getFiveRandomParkImages : (parkImages, action) => {
       return action.payload
     }
   }
 })
 
-export const {getParkImagesByParkImageParkId, getAllParkImages} = slice.actions
+export const {getParkImagesByParkImageParkId, getAllParkImages, getFiveRandomParkImages} = slice.actions
 
 export const fetchParkImagesByParkImageParkId = () => async (dispatch) => {
   const {data} = await httpConfig(`/apis/parkImage/`)
@@ -25,4 +28,10 @@ export const fetchAllParkImages= () => async (dispatch) => {
   const {data} = await httpConfig(`/apis/parkImage/`)
   dispatch(getAllParkImages(data))
 }
+
+export const fetchFiveRandomParkImages= () => async (dispatch) => {
+  const {data} = await httpConfig(`/apis/parkImage/getFive`)
+  dispatch(getFiveRandomParkImages(data))
+}
+
 export default slice.reducer

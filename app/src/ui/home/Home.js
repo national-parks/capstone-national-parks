@@ -5,11 +5,15 @@ import { useState } from "react";
 import { CarouselComponent } from './CarouselComponent'
 import "./home.css"
 import 'bootstrap/dist/css/bootstrap.css'
+import Container from 'react-bootstrap/Container'
 export const Home = () => {
 
 
 	return (<>
-	<CarouselComponent />
+	<Container fluid className="offset-1 col-10 mt-5">
+		<CarouselComponent />
+	</Container>
+
 		<div className="container-fluid amenitiesBackground">
 			<div className="row mt-4 p-2">
 				<div className="col"><h4 className="border-bottom">Park Amenities</h4></div>

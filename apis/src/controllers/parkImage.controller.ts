@@ -5,6 +5,7 @@ import {selectParkImageByParkImageParkId} from "../../utils/parkImage/selectPark
 import {selectParkImageByParkImageId} from "../../utils/parkImage/selectParkImageByParkImageId";
 import {insertParkImage} from "../../utils/parkImage/insertParkImage";
 import {selectAllParkImages} from "../../utils/parkImage/selectAllParkImages";
+import {selectFiveRandomParkImages} from "../../utils/parkImage/selectFiveRandomParkImages";
 
 
 export async function getParkImagesByParkImageParkId(request: Request, response: Response, nextFunction: NextFunction) {
@@ -31,6 +32,15 @@ export async function getParkImagesByParkImageId(request: Request, response: Res
 export async function getAllParkImages(request: Request, response: Response, nextFunction: NextFunction) {
     try {
         const result = await selectAllParkImages()
+        return response.json({status: 200, data: result, message: null})
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+export async function getFiveRandomParkImages(request: Request, response: Response, nextFunction: NextFunction) {
+    try {
+        const result = await selectFiveRandomParkImages()
         return response.json({status: 200, data: result, message: null})
     } catch (error) {
         console.log(error)
