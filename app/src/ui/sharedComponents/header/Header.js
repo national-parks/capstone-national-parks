@@ -2,7 +2,6 @@ import React from "react"
 import "./Header.css"
 import { Navbar } from 'react-bootstrap'
 import { Nav } from 'react-bootstrap'
-import { Button } from 'react-bootstrap'
 import { SignUpModal } from '../sign-up/signUpModal'
 import { SignInModal } from '../sign-in/signInModal'
 
@@ -17,7 +16,7 @@ export const Header = () => {
 			<Nav className="ml-auto">
 				<Nav.Link className="px-2" href="park-search">Search For Parks</Nav.Link>
 				<Nav.Link className="px-2" href="/aboutPage">About Us</Nav.Link>
-					<SignUpModal/>
+				<SignUpModal/>
 				<SignInModal/>
 			</Nav>
 		</Navbar.Collapse>

@@ -18,9 +18,6 @@ export const Footer = () => {
                 <li className="nav-item">
                   <a className="nav-link" href="/aboutPage">About Us</a>
                 </li>
-                {/*<li className="nav-item">*/}
-                {/*  <a className="nav-link" href="#">Contact Us</a>*/}
-                {/*</li>*/}
               </ul>
               <span className="navbar-text text-white">Made by Sarah, John, and Mauricio</span>
             </div>

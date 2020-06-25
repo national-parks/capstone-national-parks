@@ -4,8 +4,6 @@ import {Formik} from "formik/dist/index";
 import * as Yup from "yup";
 import {SignInFormContent} from "./signInFormContent";
 
-
-
 export const SignInForm = () => {
 	const validator = Yup.object().shape({
 		profileEmail: Yup.string()

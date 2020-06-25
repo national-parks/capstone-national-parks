@@ -4,8 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import {Route, Switch} from "react-router";
 
 import {Home} from "./ui/home/Home";
-import {Footer} from "./ui/sharedComponents/Footer";
-
+import {Footer} from "./ui/sharedComponents/footer/Footer";
 import {AboutPage} from "./ui/pages/AboutPage";
 import {Header} from "./ui/sharedComponents/header/Header";
 import {ParkSearch} from './ui/pages/ParkSearch/ParkSearch';
@@ -16,13 +15,11 @@ import {FourOhFour} from "./ui/pages/FourOhFour";
 import reducer from './store'
 import 'bootstrap/dist/css/bootstrap.css';
 import { library } from '@fortawesome/fontawesome-svg-core'
-import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox} from '@fortawesome/free-solid-svg-icons'
+import {faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox, faEnvelope, faKey, faTree, faCampground} from '@fortawesome/free-solid-svg-icons'
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux'
-import { ParksPosts } from './ui/posts/parks/parksPosts'
-import { PostCard } from './ui/posts/parks/parksPostCard'
 
-library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox);
+library.add(faDumpster, faToiletPaper, faWifi, faShower, faMobileAlt, faTshirt, faPoop, faCashRegister, faCaravan, faTint, faIgloo, faFireAlt, faTheaterMasks, faBox, faEnvelope, faKey, faTree, faCampground);
 
 const store = configureStore({reducer})
 

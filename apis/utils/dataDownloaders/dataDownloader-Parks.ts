@@ -28,7 +28,7 @@ function dataDownloader(): Promise<any> {
                 for (let i = 0; i < data.data.length; i++) {
                     if (data.data[i].designation.trim() === 'National Park' || data.data[i].designation.trim() === 'National Park & Preserve') {
                         let parkList = data.data[i];
-                        console.log("STATES", parkList.states)
+
                         const park: Park = {
                             parkId: uuidv1(),
                             parkContact: parkList.contacts.phoneNumbers[0].phoneNumber,
@@ -37,6 +37,7 @@ function dataDownloader(): Promise<any> {
                             parkState: parkList.states.substring(0,2),
                             parkOperatingHours: parkList.operatingHours[0].description
                         }
+
                         parkData.push(park)
                         for (let parkImage of parkList.images) {
                             const newParkImage: ParkImage = {
@@ -45,7 +46,7 @@ function dataDownloader(): Promise<any> {
                                 parkImageCaption: parkImage.altText,
                                 parkImageUrl: parkImage.url
                             }
-                            // console.log(newParkImage)
+
                             parkImageData.push(newParkImage)
 
                         }
@@ -53,9 +54,7 @@ function dataDownloader(): Promise<any> {
                 }
             }
             const result = await insertPark(parkData)
-            // console.log("WE ARE HERE", result)
             const result2 = await insertParkImage(parkImageData)
-            console.log("NO FRICKEN WAY", result2)
 
         } catch (error) {
             console.error("main data download error",error.message)

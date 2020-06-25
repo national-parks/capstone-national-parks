@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Carousel from 'react-bootstrap/Carousel'
 
-import imageA from "./tent trails.jpg"
-import imageB from "./riogrande sandbarl.jpg"
-import imageC from "./carlsbadstairway.jpg"
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchFiveRandomParkImages } from '../../store/parkImages'
 

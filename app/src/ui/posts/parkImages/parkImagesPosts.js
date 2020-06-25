@@ -7,8 +7,8 @@ import Container from 'react-bootstrap/Container'
 import { useDispatch, useSelector } from 'react-redux'
 import * as Yup from "yup"
 
-import { fetchAllParkImages } from '../../store/parkImages'
-import { PostCard } from './parkImages/parkImagesPostCard'
+import { fetchAllParkImages } from '../../../store/parkImages'
+import { PostCard } from './parkImagesPostCard'
 import { httpConfig } from '../../utils/http-config'
 import { Formik } from 'formik'
 import Form from 'react-bootstrap/Form'
@@ -16,7 +16,7 @@ import FormControl from 'react-bootstrap/FormControl'
 import InputGroup from 'react-bootstrap/InputGroup'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Button from 'react-bootstrap/Button'
-import { fetchParkImages } from '../../store/parkImages'
+import { fetchParkImages } from '../../../store/parkImages'
 
 export const ParkImagesPosts = () => {
 	const dispatch = useDispatch()
